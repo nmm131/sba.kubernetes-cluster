@@ -2,13 +2,97 @@
 
 exec > kubernetes-cluster-information-output 2>&1
 
-# get describe logs exec
-# deployments service namespace daemonSets events nodes pods
-#POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
+POD_NAMES=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
+DEPLOYMENT="sba-kubernetes"
+SERVICE="sba-kubernetes-svc"
 
-#kubectl get pods $POD_NAME
-#kubectl describe pods $POD_NAME
-# curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/proxy/
-#kubectl logs $POD_NAME
-#kubectl exec $POD_NAME env
-#kubectl exec $POD_NAME curl localhost:9080
+echo "***************
+Get Namespaces:
+***************"
+kubectl get namespaces
+echo
+echo "********************
+Describe Namespaces:
+********************"
+kubectl describe namespaces
+
+echo
+echo "**********
+Get Nodes:
+**********"
+kubectl get nodes
+echo
+echo "***************
+Describe Nodes:
+***************"
+kubectl describe nodes
+
+echo
+echo "*************
+Get Services:
+*************"
+kubectl get services $SERVICE
+echo
+echo "******************
+Descrube Services:
+******************"
+kubectl describe services $SERVICE
+
+echo
+echo "*********
+Get Pods:
+*********"
+kubectl get pods $POD_NAMES
+echo
+echo "**************
+Describe Pods:
+**************"
+kubectl describe pods $POD_NAMES
+
+echo
+echo "****************
+Get ReplicaSets:
+****************"
+kubectl get replicaSets
+echo
+echo "*********************
+Describe ReplicaSets:
+*********************"
+kubectl describe replicaSets
+
+echo
+echo "***************
+Get Deployment:
+***************"
+kubectl get deployments $DEPLOYMENT
+echo
+echo "********************
+Describe Deployment:
+********************"
+kubectl describe deployments $DEPLOYMENT
+
+echo
+echo "**********************
+Get Deployment Events:
+**********************"
+kubectl get events | grep $DEPLOYMENT
+echo
+echo "***************************
+Describe Deployment Events:
+***************************"
+kubectl describe events | grep $DEPLOYMENT
+
+echo
+echo "**************************
+Get Environment Variables:
+**************************"
+for POD in $POD_NAMES
+do
+	echo "*********************************************************
+$POD\'s Environment Variables:
+*********************************************************
+"
+	env
+	echo
+done
+

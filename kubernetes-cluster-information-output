@@ -1,0 +1,918 @@
+***************
+Get Namespaces:
+***************
+NAME              STATUS   AGE
+default           Active   28h
+kube-node-lease   Active   28h
+kube-public       Active   28h
+kube-system       Active   28h
+
+********************
+Describe Namespaces:
+********************
+Name:         default
+Labels:       <none>
+Annotations:  <none>
+Status:       Active
+
+No resource quota.
+
+No LimitRange resource.
+
+
+Name:         kube-node-lease
+Labels:       <none>
+Annotations:  <none>
+Status:       Active
+
+No resource quota.
+
+No LimitRange resource.
+
+
+Name:         kube-public
+Labels:       <none>
+Annotations:  <none>
+Status:       Active
+
+No resource quota.
+
+No LimitRange resource.
+
+
+Name:         kube-system
+Labels:       <none>
+Annotations:  <none>
+Status:       Active
+
+No resource quota.
+
+No LimitRange resource.
+
+**********
+Get Nodes:
+**********
+NAME       STATUS   ROLES    AGE   VERSION
+minikube   Ready    master   28h   v1.19.4
+
+***************
+Describe Nodes:
+***************
+Name:               minikube
+Roles:              master
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=minikube
+                    kubernetes.io/os=linux
+                    minikube.k8s.io/commit=23f40a012abb52eff365ff99a709501a61ac5876
+                    minikube.k8s.io/name=minikube
+                    minikube.k8s.io/updated_at=2021_01_17T14_18_10_0700
+                    minikube.k8s.io/version=v1.15.1
+                    node-role.kubernetes.io/master=
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: /var/run/dockershim.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Sun, 17 Jan 2021 14:18:06 -0500
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  minikube
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 18 Jan 2021 18:48:09 -0500
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Mon, 18 Jan 2021 18:45:09 -0500   Sun, 17 Jan 2021 14:18:04 -0500   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Mon, 18 Jan 2021 18:45:09 -0500   Sun, 17 Jan 2021 14:18:04 -0500   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Mon, 18 Jan 2021 18:45:09 -0500   Sun, 17 Jan 2021 14:18:04 -0500   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Mon, 18 Jan 2021 18:45:09 -0500   Sun, 17 Jan 2021 14:18:06 -0500   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  192.168.49.2
+  Hostname:    minikube
+Capacity:
+  cpu:                8
+  ephemeral-storage:  263174212Ki
+  hugepages-2Mi:      0
+  memory:             12997996Ki
+  pods:               110
+Allocatable:
+  cpu:                8
+  ephemeral-storage:  263174212Ki
+  hugepages-2Mi:      0
+  memory:             12997996Ki
+  pods:               110
+System Info:
+  Machine ID:                 8da0365dac4f47e584e597b25a334096
+  System UUID:                8da0365dac4f47e584e597b25a334096
+  Boot ID:                    264d4d00-dfec-46d7-adc8-26304ae44f0a
+  Kernel Version:             4.19.128-microsoft-standard
+  OS Image:                   Ubuntu 20.04.1 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  docker://19.3.13
+  Kubelet Version:            v1.19.4
+  Kube-Proxy Version:         v1.19.4
+Non-terminated Pods:          (10 in total)
+  Namespace                   Name                                CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                   ----                                ------------  ----------  ---------------  -------------  ---
+  default                     sba-kubernetes-64b5bd44d8-57757     0 (0%)        0 (0%)      0 (0%)           0 (0%)         39m
+  default                     sba-kubernetes-64b5bd44d8-6fgng     0 (0%)        0 (0%)      0 (0%)           0 (0%)         39m
+  default                     sba-kubernetes-64b5bd44d8-mvjrm     0 (0%)        0 (0%)      0 (0%)           0 (0%)         39m
+  kube-system                 coredns-f9fd979d6-gm5pf             100m (1%)     0 (0%)      70Mi (0%)        170Mi (1%)     28h
+  kube-system                 etcd-minikube                       0 (0%)        0 (0%)      0 (0%)           0 (0%)         28h
+  kube-system                 kube-apiserver-minikube             250m (3%)     0 (0%)      0 (0%)           0 (0%)         28h
+  kube-system                 kube-controller-manager-minikube    200m (2%)     0 (0%)      0 (0%)           0 (0%)         28h
+  kube-system                 kube-proxy-68bxk                    0 (0%)        0 (0%)      0 (0%)           0 (0%)         28h
+  kube-system                 kube-scheduler-minikube             100m (1%)     0 (0%)      0 (0%)           0 (0%)         28h
+  kube-system                 storage-provisioner                 0 (0%)        0 (0%)      0 (0%)           0 (0%)         28h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests   Limits
+  --------           --------   ------
+  cpu                650m (8%)  0 (0%)
+  memory             70Mi (0%)  170Mi (1%)
+  ephemeral-storage  0 (0%)     0 (0%)
+  hugepages-2Mi      0 (0%)     0 (0%)
+Events:
+  Type    Reason                   Age                From        Message
+  ----    ------                   ----               ----        -------
+  Normal  Starting                 43m                kubelet     Starting kubelet.
+  Normal  NodeAllocatableEnforced  43m                kubelet     Updated Node Allocatable limit across pods
+  Normal  NodeHasSufficientMemory  43m (x8 over 43m)  kubelet     Node minikube status is now: NodeHasSufficientMemory
+  Normal  NodeHasNoDiskPressure    43m (x8 over 43m)  kubelet     Node minikube status is now: NodeHasNoDiskPressure
+  Normal  NodeHasSufficientPID     43m (x7 over 43m)  kubelet     Node minikube status is now: NodeHasSufficientPID
+  Normal  Starting                 43m                kube-proxy  Starting kube-proxy.
+
+*************
+Get Services:
+*************
+NAME                 TYPE       CLUSTER-IP    EXTERNAL-IP   PORT(S)          AGE
+sba-kubernetes-svc   NodePort   10.104.0.79   <none>        8080:31000/TCP   39m
+
+******************
+Descrube Services:
+******************
+Name:                     sba-kubernetes-svc
+Namespace:                default
+Labels:                   <none>
+Annotations:              <none>
+Selector:                 app=sba-kubernetes
+Type:                     NodePort
+IP Families:              <none>
+IP:                       10.104.0.79
+IPs:                      <none>
+Port:                     <unset>  8080/TCP
+TargetPort:               8080/TCP
+NodePort:                 <unset>  31000/TCP
+Endpoints:                <none>
+Session Affinity:         None
+External Traffic Policy:  Cluster
+Events:                   <none>
+
+*********
+Get Pods:
+*********
+NAME                              READY   STATUS    RESTARTS   AGE
+sba-kubernetes-64b5bd44d8-57757   1/1     Running   0          39m
+sba-kubernetes-64b5bd44d8-6fgng   1/1     Running   0          39m
+sba-kubernetes-64b5bd44d8-mvjrm   1/1     Running   0          39m
+
+**************
+Describe Pods:
+**************
+Name:         sba-kubernetes-64b5bd44d8-57757
+Namespace:    default
+Priority:     0
+Node:         minikube/192.168.49.2
+Start Time:   Mon, 18 Jan 2021 18:08:41 -0500
+Labels:       app=web
+              pod-template-hash=64b5bd44d8
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.5
+IPs:
+  IP:           172.17.0.5
+Controlled By:  ReplicaSet/sba-kubernetes-64b5bd44d8
+Containers:
+  front-end:
+    Container ID:  docker://acb4d15a1ec50d6057845f3e31334435e4b4217eeda3e97cdeb8f20bb96208e8
+    Image:         nmm131/sba.kubernetes-cluster
+    Image ID:      docker-pullable://nmm131/sba.kubernetes-cluster@sha256:2a99621ee36625499cac936384de75da2809cd405557391b726327cf7cebeecb
+    Port:          8080/TCP
+    Host Port:     0/TCP
+    Command:
+      sleep
+    Args:
+      infinity
+    State:          Running
+      Started:      Mon, 18 Jan 2021 18:08:45 -0500
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2lj9h (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-2lj9h:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-2lj9h
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                 node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  39m   default-scheduler  Successfully assigned default/sba-kubernetes-64b5bd44d8-57757 to minikube
+  Normal  Pulling    39m   kubelet            Pulling image "nmm131/sba.kubernetes-cluster"
+  Normal  Pulled     39m   kubelet            Successfully pulled image "nmm131/sba.kubernetes-cluster" in 2.1038797s
+  Normal  Created    39m   kubelet            Created container front-end
+  Normal  Started    39m   kubelet            Started container front-end
+
+
+Name:         sba-kubernetes-64b5bd44d8-6fgng
+Namespace:    default
+Priority:     0
+Node:         minikube/192.168.49.2
+Start Time:   Mon, 18 Jan 2021 18:08:41 -0500
+Labels:       app=web
+              pod-template-hash=64b5bd44d8
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.4
+IPs:
+  IP:           172.17.0.4
+Controlled By:  ReplicaSet/sba-kubernetes-64b5bd44d8
+Containers:
+  front-end:
+    Container ID:  docker://cff0a4d5049d16584cbdf2feccbea0673ac423ffebccc7b831d69e66ad27e3ef
+    Image:         nmm131/sba.kubernetes-cluster
+    Image ID:      docker-pullable://nmm131/sba.kubernetes-cluster@sha256:2a99621ee36625499cac936384de75da2809cd405557391b726327cf7cebeecb
+    Port:          8080/TCP
+    Host Port:     0/TCP
+    Command:
+      sleep
+    Args:
+      infinity
+    State:          Running
+      Started:      Mon, 18 Jan 2021 18:08:44 -0500
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2lj9h (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-2lj9h:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-2lj9h
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                 node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  39m   default-scheduler  Successfully assigned default/sba-kubernetes-64b5bd44d8-6fgng to minikube
+  Normal  Pulling    39m   kubelet            Pulling image "nmm131/sba.kubernetes-cluster"
+  Normal  Pulled     39m   kubelet            Successfully pulled image "nmm131/sba.kubernetes-cluster" in 1.2360502s
+  Normal  Created    39m   kubelet            Created container front-end
+  Normal  Started    39m   kubelet            Started container front-end
+
+
+Name:         sba-kubernetes-64b5bd44d8-mvjrm
+Namespace:    default
+Priority:     0
+Node:         minikube/192.168.49.2
+Start Time:   Mon, 18 Jan 2021 18:08:41 -0500
+Labels:       app=web
+              pod-template-hash=64b5bd44d8
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.3
+IPs:
+  IP:           172.17.0.3
+Controlled By:  ReplicaSet/sba-kubernetes-64b5bd44d8
+Containers:
+  front-end:
+    Container ID:  docker://c09b380785976f632f119a38cad0d997dc06c07041b076eee47b44f3a427737e
+    Image:         nmm131/sba.kubernetes-cluster
+    Image ID:      docker-pullable://nmm131/sba.kubernetes-cluster@sha256:2a99621ee36625499cac936384de75da2809cd405557391b726327cf7cebeecb
+    Port:          8080/TCP
+    Host Port:     0/TCP
+    Command:
+      sleep
+    Args:
+      infinity
+    State:          Running
+      Started:      Mon, 18 Jan 2021 18:08:43 -0500
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-2lj9h (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-2lj9h:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-2lj9h
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                 node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  39m   default-scheduler  Successfully assigned default/sba-kubernetes-64b5bd44d8-mvjrm to minikube
+  Normal  Pulling    39m   kubelet            Pulling image "nmm131/sba.kubernetes-cluster"
+  Normal  Pulled     39m   kubelet            Successfully pulled image "nmm131/sba.kubernetes-cluster" in 604.3283ms
+  Normal  Created    39m   kubelet            Created container front-end
+  Normal  Started    39m   kubelet            Started container front-end
+
+****************
+Get ReplicaSets:
+****************
+NAME                        DESIRED   CURRENT   READY   AGE
+sba-kubernetes-64b5bd44d8   3         3         3       39m
+
+*********************
+Describe ReplicaSets:
+*********************
+Name:           sba-kubernetes-64b5bd44d8
+Namespace:      default
+Selector:       app=web,pod-template-hash=64b5bd44d8
+Labels:         app=web
+                pod-template-hash=64b5bd44d8
+Annotations:    deployment.kubernetes.io/desired-replicas: 3
+                deployment.kubernetes.io/max-replicas: 4
+                deployment.kubernetes.io/revision: 1
+Controlled By:  Deployment/sba-kubernetes
+Replicas:       3 current / 3 desired
+Pods Status:    3 Running / 0 Waiting / 0 Succeeded / 0 Failed
+Pod Template:
+  Labels:  app=web
+           pod-template-hash=64b5bd44d8
+  Containers:
+   front-end:
+    Image:      nmm131/sba.kubernetes-cluster
+    Port:       8080/TCP
+    Host Port:  0/TCP
+    Command:
+      sleep
+    Args:
+      infinity
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Events:
+  Type    Reason            Age   From                   Message
+  ----    ------            ----  ----                   -------
+  Normal  SuccessfulCreate  39m   replicaset-controller  Created pod: sba-kubernetes-64b5bd44d8-6fgng
+  Normal  SuccessfulCreate  39m   replicaset-controller  Created pod: sba-kubernetes-64b5bd44d8-57757
+  Normal  SuccessfulCreate  39m   replicaset-controller  Created pod: sba-kubernetes-64b5bd44d8-mvjrm
+
+***************
+Get Deployment:
+***************
+NAME             READY   UP-TO-DATE   AVAILABLE   AGE
+sba-kubernetes   3/3     3            3           39m
+
+********************
+Describe Deployment:
+********************
+Name:                   sba-kubernetes
+Namespace:              default
+CreationTimestamp:      Mon, 18 Jan 2021 18:08:41 -0500
+Labels:                 app=web
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=web
+Replicas:               3 desired | 3 updated | 3 total | 3 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  app=web
+  Containers:
+   front-end:
+    Image:      nmm131/sba.kubernetes-cluster
+    Port:       8080/TCP
+    Host Port:  0/TCP
+    Command:
+      sleep
+    Args:
+      infinity
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      True    MinimumReplicasAvailable
+  Progressing    True    NewReplicaSetAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   sba-kubernetes-64b5bd44d8 (3/3 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  39m   deployment-controller  Scaled up replica set sba-kubernetes-64b5bd44d8 to 3
+
+**********************
+Get Deployment Events:
+**********************
+27h         Normal   Scheduled                 pod/sba-kubernetes-64b5bd44d8-2zxhn    Successfully assigned default/sba-kubernetes-64b5bd44d8-2zxhn to minikube
+27h         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Pulling image "nmm131/sba.kubernetes-cluster"
+27h         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-2zxhn    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 814.8831ms
+27h         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Created container front-end
+27h         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Started container front-end
+43m         Normal   SandboxChanged            pod/sba-kubernetes-64b5bd44d8-2zxhn    Pod sandbox changed, it will be killed and re-created.
+43m         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Pulling image "nmm131/sba.kubernetes-cluster"
+43m         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-2zxhn    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 9.9011451s
+43m         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Created container front-end
+43m         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Started container front-end
+41m         Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Stopping container front-end
+39m         Normal   Scheduled                 pod/sba-kubernetes-64b5bd44d8-57757    Successfully assigned default/sba-kubernetes-64b5bd44d8-57757 to minikube
+39m         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-57757    Pulling image "nmm131/sba.kubernetes-cluster"
+39m         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-57757    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 2.1038797s
+39m         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-57757    Created container front-end
+39m         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-57757    Started container front-end
+39m         Normal   Scheduled                 pod/sba-kubernetes-64b5bd44d8-6fgng    Successfully assigned default/sba-kubernetes-64b5bd44d8-6fgng to minikube
+39m         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-6fgng    Pulling image "nmm131/sba.kubernetes-cluster"
+39m         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-6fgng    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 1.2360502s
+39m         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-6fgng    Created container front-end
+39m         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-6fgng    Started container front-end
+28h         Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-l6rhv    Stopping container front-end
+28h         Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-lwsnj    Stopping container front-end
+39m         Normal   Scheduled                 pod/sba-kubernetes-64b5bd44d8-mvjrm    Successfully assigned default/sba-kubernetes-64b5bd44d8-mvjrm to minikube
+39m         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-mvjrm    Pulling image "nmm131/sba.kubernetes-cluster"
+39m         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-mvjrm    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 604.3283ms
+39m         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-mvjrm    Created container front-end
+39m         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-mvjrm    Started container front-end
+28h         Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-p6tnk    Stopping container front-end
+28h         Normal   Scheduled                 pod/sba-kubernetes-64b5bd44d8-ztxc8    Successfully assigned default/sba-kubernetes-64b5bd44d8-ztxc8 to minikube
+28h         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-ztxc8    Pulling image "nmm131/sba.kubernetes-cluster"
+28h         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-ztxc8    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 6.8355968s
+28h         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-ztxc8    Created container front-end
+28h         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-ztxc8    Started container front-end
+27h         Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-ztxc8    Stopping container front-end
+28h         Normal   SuccessfulCreate          replicaset/sba-kubernetes-64b5bd44d8   Created pod: sba-kubernetes-64b5bd44d8-ztxc8
+27h         Normal   SuccessfulCreate          replicaset/sba-kubernetes-64b5bd44d8   Created pod: sba-kubernetes-64b5bd44d8-2zxhn
+39m         Normal   SuccessfulCreate          replicaset/sba-kubernetes-64b5bd44d8   Created pod: sba-kubernetes-64b5bd44d8-6fgng
+39m         Normal   SuccessfulCreate          replicaset/sba-kubernetes-64b5bd44d8   Created pod: sba-kubernetes-64b5bd44d8-57757
+39m         Normal   SuccessfulCreate          replicaset/sba-kubernetes-64b5bd44d8   Created pod: sba-kubernetes-64b5bd44d8-mvjrm
+28h         Normal   ScalingReplicaSet         deployment/sba-kubernetes              Scaled up replica set sba-kubernetes-64b5bd44d8 to 1
+27h         Normal   ScalingReplicaSet         deployment/sba-kubernetes              Scaled up replica set sba-kubernetes-64b5bd44d8 to 1
+39m         Normal   ScalingReplicaSet         deployment/sba-kubernetes              Scaled up replica set sba-kubernetes-64b5bd44d8 to 3
+
+***************************
+Describe Deployment Events:
+***************************
+Name:             sba-kubernetes-64b5bd44d8-2zxhn.165b1e6dd21ef314
+  Name:              sba-kubernetes-64b5bd44d8-2zxhn
+Message:             Successfully assigned default/sba-kubernetes-64b5bd44d8-2zxhn to minikube
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-2zxhn.165b1e6dd21ef314
+Name:             sba-kubernetes-64b5bd44d8-2zxhn.165b1e6e18fa8c94
+  Name:              sba-kubernetes-64b5bd44d8-2zxhn
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-2zxhn.165b1e6e18fa8c94
+Name:             sba-kubernetes-64b5bd44d8-2zxhn.165b1e6e498d178c
+  Name:              sba-kubernetes-64b5bd44d8-2zxhn
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-2zxhn.165b1e6e498d178c
+Name:             sba-kubernetes-64b5bd44d8-2zxhn.165b1e6e51e4f468
+  Name:              sba-kubernetes-64b5bd44d8-2zxhn
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-2zxhn.165b1e6e51e4f468
+Name:             sba-kubernetes-64b5bd44d8-2zxhn.165b1e6e5e5ba980
+  Name:              sba-kubernetes-64b5bd44d8-2zxhn
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-2zxhn.165b1e6e5e5ba980
+Name:             sba-kubernetes-64b5bd44d8-2zxhn.165b7608167b1e74
+  Name:              sba-kubernetes-64b5bd44d8-2zxhn
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-2zxhn.165b7608167b1e74
+Name:             sba-kubernetes-64b5bd44d8-2zxhn.165b76085168e7c8
+  Name:              sba-kubernetes-64b5bd44d8-2zxhn
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-2zxhn.165b76085168e7c8
+Name:             sba-kubernetes-64b5bd44d8-2zxhn.165b760a9f909764
+  Name:              sba-kubernetes-64b5bd44d8-2zxhn
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-2zxhn.165b760a9f909764
+Name:             sba-kubernetes-64b5bd44d8-2zxhn.165b760ab5826e30
+  Name:              sba-kubernetes-64b5bd44d8-2zxhn
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-2zxhn.165b760ab5826e30
+Name:             sba-kubernetes-64b5bd44d8-2zxhn.165b760abbbfb550
+  Name:              sba-kubernetes-64b5bd44d8-2zxhn
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-2zxhn.165b760abbbfb550
+Name:             sba-kubernetes-64b5bd44d8-2zxhn.165b7624d51aaba8
+  Name:              sba-kubernetes-64b5bd44d8-2zxhn
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-2zxhn.165b7624d51aaba8
+Name:             sba-kubernetes-64b5bd44d8-57757.165b7642ec8a0b30
+  Name:              sba-kubernetes-64b5bd44d8-57757
+Message:             Successfully assigned default/sba-kubernetes-64b5bd44d8-57757 to minikube
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-57757.165b7642ec8a0b30
+Name:             sba-kubernetes-64b5bd44d8-57757.165b764336fbd7ac
+  Name:              sba-kubernetes-64b5bd44d8-57757
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-57757.165b764336fbd7ac
+Name:             sba-kubernetes-64b5bd44d8-57757.165b7643b462a7fc
+  Name:              sba-kubernetes-64b5bd44d8-57757
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-57757.165b7643b462a7fc
+Name:             sba-kubernetes-64b5bd44d8-57757.165b7643b89c47b0
+  Name:              sba-kubernetes-64b5bd44d8-57757
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-57757.165b7643b89c47b0
+Name:             sba-kubernetes-64b5bd44d8-57757.165b7643bf01a744
+  Name:              sba-kubernetes-64b5bd44d8-57757
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-57757.165b7643bf01a744
+Name:             sba-kubernetes-64b5bd44d8-6fgng.165b7642ebc8f580
+  Name:              sba-kubernetes-64b5bd44d8-6fgng
+Message:             Successfully assigned default/sba-kubernetes-64b5bd44d8-6fgng to minikube
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-6fgng.165b7642ebc8f580
+Name:             sba-kubernetes-64b5bd44d8-6fgng.165b76433267d2f4
+  Name:              sba-kubernetes-64b5bd44d8-6fgng
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-6fgng.165b76433267d2f4
+Name:             sba-kubernetes-64b5bd44d8-6fgng.165b76437c149c48
+  Name:              sba-kubernetes-64b5bd44d8-6fgng
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-6fgng.165b76437c149c48
+Name:             sba-kubernetes-64b5bd44d8-6fgng.165b7643813d8b44
+  Name:              sba-kubernetes-64b5bd44d8-6fgng
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-6fgng.165b7643813d8b44
+Name:             sba-kubernetes-64b5bd44d8-6fgng.165b764386f9ae3c
+  Name:              sba-kubernetes-64b5bd44d8-6fgng
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-6fgng.165b764386f9ae3c
+Name:             sba-kubernetes-64b5bd44d8-l6rhv.165b1c45f11ed434
+  Name:              sba-kubernetes-64b5bd44d8-l6rhv
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-l6rhv.165b1c45f11ed434
+Name:             sba-kubernetes-64b5bd44d8-lwsnj.165b1c45f1941d34
+  Name:              sba-kubernetes-64b5bd44d8-lwsnj
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-lwsnj.165b1c45f1941d34
+Name:             sba-kubernetes-64b5bd44d8-mvjrm.165b7642ec8eec68
+  Name:              sba-kubernetes-64b5bd44d8-mvjrm
+Message:             Successfully assigned default/sba-kubernetes-64b5bd44d8-mvjrm to minikube
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-mvjrm.165b7642ec8eec68
+Name:             sba-kubernetes-64b5bd44d8-mvjrm.165b76432e4f32e8
+  Name:              sba-kubernetes-64b5bd44d8-mvjrm
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-mvjrm.165b76432e4f32e8
+Name:             sba-kubernetes-64b5bd44d8-mvjrm.165b76435254b0dc
+  Name:              sba-kubernetes-64b5bd44d8-mvjrm
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-mvjrm.165b76435254b0dc
+Name:             sba-kubernetes-64b5bd44d8-mvjrm.165b7643571b3d84
+  Name:              sba-kubernetes-64b5bd44d8-mvjrm
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-mvjrm.165b7643571b3d84
+Name:             sba-kubernetes-64b5bd44d8-mvjrm.165b76435e448570
+  Name:              sba-kubernetes-64b5bd44d8-mvjrm
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-mvjrm.165b76435e448570
+Name:             sba-kubernetes-64b5bd44d8-p6tnk.165b1c45f18a54e8
+  Name:              sba-kubernetes-64b5bd44d8-p6tnk
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-p6tnk.165b1c45f18a54e8
+Name:             sba-kubernetes-64b5bd44d8-ztxc8.165b1c47f1a822a0
+  Name:              sba-kubernetes-64b5bd44d8-ztxc8
+Message:             Successfully assigned default/sba-kubernetes-64b5bd44d8-ztxc8 to minikube
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-ztxc8.165b1c47f1a822a0
+Name:             sba-kubernetes-64b5bd44d8-ztxc8.165b1c481d8afdac
+  Name:              sba-kubernetes-64b5bd44d8-ztxc8
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-ztxc8.165b1c481d8afdac
+Name:             sba-kubernetes-64b5bd44d8-ztxc8.165b1c49b4fa496c
+  Name:              sba-kubernetes-64b5bd44d8-ztxc8
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-ztxc8.165b1c49b4fa496c
+Name:             sba-kubernetes-64b5bd44d8-ztxc8.165b1c49c53a298c
+  Name:              sba-kubernetes-64b5bd44d8-ztxc8
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-ztxc8.165b1c49c53a298c
+Name:             sba-kubernetes-64b5bd44d8-ztxc8.165b1c49cbb65894
+  Name:              sba-kubernetes-64b5bd44d8-ztxc8
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-ztxc8.165b1c49cbb65894
+Name:             sba-kubernetes-64b5bd44d8-ztxc8.165b1e684c554a1c
+  Name:              sba-kubernetes-64b5bd44d8-ztxc8
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-ztxc8.165b1e684c554a1c
+Name:             sba-kubernetes-64b5bd44d8.165b1c47f12cf9b8
+  Name:              sba-kubernetes-64b5bd44d8
+Message:             Created pod: sba-kubernetes-64b5bd44d8-ztxc8
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8.165b1c47f12cf9b8
+Name:             sba-kubernetes-64b5bd44d8.165b1e6dd16bf7f0
+  Name:              sba-kubernetes-64b5bd44d8
+Message:             Created pod: sba-kubernetes-64b5bd44d8-2zxhn
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8.165b1e6dd16bf7f0
+Name:             sba-kubernetes-64b5bd44d8.165b7642eb40ded4
+  Name:              sba-kubernetes-64b5bd44d8
+Message:             Created pod: sba-kubernetes-64b5bd44d8-6fgng
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8.165b7642eb40ded4
+Name:             sba-kubernetes-64b5bd44d8.165b7642ebc32664
+  Name:              sba-kubernetes-64b5bd44d8
+Message:             Created pod: sba-kubernetes-64b5bd44d8-57757
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8.165b7642ebc32664
+Name:             sba-kubernetes-64b5bd44d8.165b7642ebc876f0
+  Name:              sba-kubernetes-64b5bd44d8
+Message:             Created pod: sba-kubernetes-64b5bd44d8-mvjrm
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8.165b7642ebc876f0
+Name:             sba-kubernetes.165b1c47f091a6d4
+  Name:              sba-kubernetes
+Message:             Scaled up replica set sba-kubernetes-64b5bd44d8 to 1
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes.165b1c47f091a6d4
+Name:             sba-kubernetes.165b1e6dcf81dd88
+  Name:              sba-kubernetes
+Message:             Scaled up replica set sba-kubernetes-64b5bd44d8 to 1
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes.165b1e6dcf81dd88
+Name:             sba-kubernetes.165b7642eae53b74
+  Name:              sba-kubernetes
+Message:             Scaled up replica set sba-kubernetes-64b5bd44d8 to 3
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes.165b7642eae53b74
+
+**************************
+Get Environment Variables:
+**************************
+*********************************************************
+sba-kubernetes-64b5bd44d8-57757\'s Environment Variables:
+*********************************************************
+
+ChocolateyToolsLocation=C:\tools
+USERDOMAIN=LAPTOP-AVIPDVH0
+OS=Windows_NT
+COMMONPROGRAMFILES=C:\Program Files\Common Files
+PROCESSOR_LEVEL=6
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+CommonProgramW6432=C:\Program Files\Common Files
+M2_HOME=C:\ProgramData\chocolatey\lib\maven\apache-maven-3.6.3
+ANDROID_HOME=C:\NVPACK\android-sdk-windows
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+MSYSTEM_CARCH=x86_64
+DISPLAY=needs-to-be-defined
+HOSTNAME=LAPTOP-AVIPDVH0
+PUBLIC=C:\Users\Public
+CONFIG_SITE=/mingw64/etc/config.site
+EXEPATH=C:\Program Files\Git
+NVPACK_ROOT=C:\\NVPACK
+MSYSTEM_CHOST=x86_64-w64-mingw32
+USERNAME=nmm13
+ChocolateyInstall=C:\ProgramData\chocolatey
+JAVA_HOME=C:\NVPACK\jdk1.8.0_77
+LOGONSERVER=\\LAPTOP-AVIPDVH0
+PROCESSOR_ARCHITECTURE=AMD64
+LOCALAPPDATA=C:\Users\nmm13\AppData\Local
+CLASSPATH=.;
+COMPUTERNAME=LAPTOP-AVIPDVH0
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+!::=::\
+NDKROOT=C:\NVPACK\android-ndk-r14b
+SYSTEMDRIVE=C:
+USERPROFILE=C:\Users\nmm13
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW
+SYSTEMROOT=C:\WINDOWS
+USERDOMAIN_ROAMINGPROFILE=LAPTOP-AVIPDVH0
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+GRADLE_HOME=C:\NVPACK\gradle-4.1
+MINGW_PACKAGE_PREFIX=mingw-w64-x86_64
+PWD=/c/Users/nmm13/Documents/DevOps/Kubernetes/sba.kubernetes-cluster
+SSH_ASKPASS=/mingw64/libexec/git-core/git-gui--askpass
+HOME=/c/users/nmm13
+TMP=/tmp
+LC_CTYPE=C.UTF-8
+TERM_PROGRAM=mintty
+TERM_PROGRAM_VERSION=3.4.2
+ANDROID_NDK_ROOT=C:\NVPACK\android-ndk-r14b
+JENKINS_HOME=C:\Program Files (x86)\Jenkins
+JENKINS=C:\Program Files (x86)\Jenkins\jenkins.exe
+MSYSTEM_PREFIX=/mingw64
+AWE_DIR=C:\Program Files (x86)\Khrona LLC\Awesomium SDK\1.6.6\
+OneDrive=C:\Users\nmm13\OneDrive
+PROCESSOR_REVISION=9e09
+FPS_BROWSER_USER_PROFILE_STRING=Default
+TMPDIR=/tmp
+NUMBER_OF_PROCESSORS=8
+ProgramW6432=C:\Program Files
+NVPACK_NDK_VERSION=android-ndk-r14b
+COMSPEC=C:\WINDOWS\system32\cmd.exe
+NDK_ROOT=C:\NVPACK\android-ndk-r14b
+APPDATA=C:\Users\nmm13\AppData\Roaming
+TERM=xterm
+SHELL=/usr/bin/bash
+WINDIR=C:\WINDOWS
+MINGW_CHOST=x86_64-w64-mingw32
+ProgramData=C:\ProgramData
+SHLVL=2
+PLINK_PROTOCOL=ssh
+PROGRAMFILES=C:\Program Files
+ACLOCAL_PATH=/mingw64/share/aclocal:/usr/share/aclocal
+MANPATH=/mingw64/local/man:/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man
+ORIGINAL_TEMP=/tmp
+ORIGINAL_TMP=/tmp
+NVPACK_NDK_TOOL_VERSION=4.9
+ALLUSERSPROFILE=C:\ProgramData
+TEMP=/tmp
+DriverData=C:\Windows\System32\Drivers\DriverData
+MSYSTEM=MINGW64
+MINGW_PREFIX=/mingw64
+SESSIONNAME=Console
+ANT_HOME=C:\NVPACK\apache-ant-1.8.2
+ProgramFiles(x86)=C:\Program Files (x86)
+PATH=/c/users/nmm13/bin:/mingw64/bin:/usr/local/bin:/usr/bin:/bin:/mingw64/bin:/usr/bin:/c/users/nmm13/bin:/c/Python39/Scripts:/c/Python39:/c/tools/ruby27/bin:/c/Program Files (x86)/Intel/iCLS Client:/c/Program Files/Intel/iCLS Client:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/cmd:/c/Program Files/PuTTY:/c/ProgramData/chocolatey/bin:/c/Program Files/Java/jdk1.8.0_211/bin:/c/ProgramData/chocolatey/lib/maven/apache-maven-3.6.3/bin:/c/Program Files/nodejs:/c/Program Files/Amazon/AWSCLIV2:/c/Program Files/Docker/Docker/resources/bin:/c/ProgramData/DockerDesktop/version-bin:/c/Users/nmm13/AppData/Local/Programs/Python/Python39/Scripts:/c/Users/nmm13/AppData/Local/Programs/Python/Python39:/c/NVPACK/android-sdk-windows/extras/android/support:/c/NVPACK/android-sdk-windows/build-tools:/c/NVPACK/android-sdk-windows/platform-tools:/c/NVPACK/android-sdk-windows/tools:/c/NVPACK/gradle-4.1/bin:/c/NVPACK/apache-ant-1.8.2/bin:/c/NVPACK/jdk1.8.0_77/bin::/usr/bin/vendor_perl:/usr/bin/core_perl
+HOMEDRIVE=C:
+ChocolateyLastPathUpdate=132520851652066203
+PKG_CONFIG_PATH=/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig
+INFOPATH=/usr/local/info:/usr/share/info:/usr/info:/share/info
+HOMEPATH=\Users\nmm13
+ORIGINAL_PATH=/mingw64/bin:/usr/bin:/c/users/nmm13/bin:/c/Python39/Scripts:/c/Python39:/c/tools/ruby27/bin:/c/Program Files (x86)/Intel/iCLS Client:/c/Program Files/Intel/iCLS Client:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/cmd:/c/Program Files/PuTTY:/c/ProgramData/chocolatey/bin:/c/Program Files/Java/jdk1.8.0_211/bin:/c/ProgramData/chocolatey/lib/maven/apache-maven-3.6.3/bin:/c/Program Files/nodejs:/c/Program Files/Amazon/AWSCLIV2:/c/Program Files/Docker/Docker/resources/bin:/c/ProgramData/DockerDesktop/version-bin:/c/Users/nmm13/AppData/Local/Programs/Python/Python39/Scripts:/c/Users/nmm13/AppData/Local/Programs/Python/Python39:/c/NVPACK/android-sdk-windows/extras/android/support:/c/NVPACK/android-sdk-windows/build-tools:/c/NVPACK/android-sdk-windows/platform-tools:/c/NVPACK/android-sdk-windows/tools:/c/NVPACK/gradle-4.1/bin:/c/NVPACK/apache-ant-1.8.2/bin:/c/NVPACK/jdk1.8.0_77/bin:
+VBOX_MSI_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\
+RUBYOPT=-Eutf-8
+_=/usr/bin/env
+
+*********************************************************
+sba-kubernetes-64b5bd44d8-6fgng\'s Environment Variables:
+*********************************************************
+
+ChocolateyToolsLocation=C:\tools
+USERDOMAIN=LAPTOP-AVIPDVH0
+OS=Windows_NT
+COMMONPROGRAMFILES=C:\Program Files\Common Files
+PROCESSOR_LEVEL=6
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+CommonProgramW6432=C:\Program Files\Common Files
+M2_HOME=C:\ProgramData\chocolatey\lib\maven\apache-maven-3.6.3
+ANDROID_HOME=C:\NVPACK\android-sdk-windows
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+MSYSTEM_CARCH=x86_64
+DISPLAY=needs-to-be-defined
+HOSTNAME=LAPTOP-AVIPDVH0
+PUBLIC=C:\Users\Public
+CONFIG_SITE=/mingw64/etc/config.site
+EXEPATH=C:\Program Files\Git
+NVPACK_ROOT=C:\\NVPACK
+MSYSTEM_CHOST=x86_64-w64-mingw32
+USERNAME=nmm13
+ChocolateyInstall=C:\ProgramData\chocolatey
+JAVA_HOME=C:\NVPACK\jdk1.8.0_77
+LOGONSERVER=\\LAPTOP-AVIPDVH0
+PROCESSOR_ARCHITECTURE=AMD64
+LOCALAPPDATA=C:\Users\nmm13\AppData\Local
+CLASSPATH=.;
+COMPUTERNAME=LAPTOP-AVIPDVH0
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+!::=::\
+NDKROOT=C:\NVPACK\android-ndk-r14b
+SYSTEMDRIVE=C:
+USERPROFILE=C:\Users\nmm13
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW
+SYSTEMROOT=C:\WINDOWS
+USERDOMAIN_ROAMINGPROFILE=LAPTOP-AVIPDVH0
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+GRADLE_HOME=C:\NVPACK\gradle-4.1
+MINGW_PACKAGE_PREFIX=mingw-w64-x86_64
+PWD=/c/Users/nmm13/Documents/DevOps/Kubernetes/sba.kubernetes-cluster
+SSH_ASKPASS=/mingw64/libexec/git-core/git-gui--askpass
+HOME=/c/users/nmm13
+TMP=/tmp
+LC_CTYPE=C.UTF-8
+TERM_PROGRAM=mintty
+TERM_PROGRAM_VERSION=3.4.2
+ANDROID_NDK_ROOT=C:\NVPACK\android-ndk-r14b
+JENKINS_HOME=C:\Program Files (x86)\Jenkins
+JENKINS=C:\Program Files (x86)\Jenkins\jenkins.exe
+MSYSTEM_PREFIX=/mingw64
+AWE_DIR=C:\Program Files (x86)\Khrona LLC\Awesomium SDK\1.6.6\
+OneDrive=C:\Users\nmm13\OneDrive
+PROCESSOR_REVISION=9e09
+FPS_BROWSER_USER_PROFILE_STRING=Default
+TMPDIR=/tmp
+NUMBER_OF_PROCESSORS=8
+ProgramW6432=C:\Program Files
+NVPACK_NDK_VERSION=android-ndk-r14b
+COMSPEC=C:\WINDOWS\system32\cmd.exe
+NDK_ROOT=C:\NVPACK\android-ndk-r14b
+APPDATA=C:\Users\nmm13\AppData\Roaming
+TERM=xterm
+SHELL=/usr/bin/bash
+WINDIR=C:\WINDOWS
+MINGW_CHOST=x86_64-w64-mingw32
+ProgramData=C:\ProgramData
+SHLVL=2
+PLINK_PROTOCOL=ssh
+PROGRAMFILES=C:\Program Files
+ACLOCAL_PATH=/mingw64/share/aclocal:/usr/share/aclocal
+MANPATH=/mingw64/local/man:/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man
+ORIGINAL_TEMP=/tmp
+ORIGINAL_TMP=/tmp
+NVPACK_NDK_TOOL_VERSION=4.9
+ALLUSERSPROFILE=C:\ProgramData
+TEMP=/tmp
+DriverData=C:\Windows\System32\Drivers\DriverData
+MSYSTEM=MINGW64
+MINGW_PREFIX=/mingw64
+SESSIONNAME=Console
+ANT_HOME=C:\NVPACK\apache-ant-1.8.2
+ProgramFiles(x86)=C:\Program Files (x86)
+PATH=/c/users/nmm13/bin:/mingw64/bin:/usr/local/bin:/usr/bin:/bin:/mingw64/bin:/usr/bin:/c/users/nmm13/bin:/c/Python39/Scripts:/c/Python39:/c/tools/ruby27/bin:/c/Program Files (x86)/Intel/iCLS Client:/c/Program Files/Intel/iCLS Client:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/cmd:/c/Program Files/PuTTY:/c/ProgramData/chocolatey/bin:/c/Program Files/Java/jdk1.8.0_211/bin:/c/ProgramData/chocolatey/lib/maven/apache-maven-3.6.3/bin:/c/Program Files/nodejs:/c/Program Files/Amazon/AWSCLIV2:/c/Program Files/Docker/Docker/resources/bin:/c/ProgramData/DockerDesktop/version-bin:/c/Users/nmm13/AppData/Local/Programs/Python/Python39/Scripts:/c/Users/nmm13/AppData/Local/Programs/Python/Python39:/c/NVPACK/android-sdk-windows/extras/android/support:/c/NVPACK/android-sdk-windows/build-tools:/c/NVPACK/android-sdk-windows/platform-tools:/c/NVPACK/android-sdk-windows/tools:/c/NVPACK/gradle-4.1/bin:/c/NVPACK/apache-ant-1.8.2/bin:/c/NVPACK/jdk1.8.0_77/bin::/usr/bin/vendor_perl:/usr/bin/core_perl
+HOMEDRIVE=C:
+ChocolateyLastPathUpdate=132520851652066203
+PKG_CONFIG_PATH=/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig
+INFOPATH=/usr/local/info:/usr/share/info:/usr/info:/share/info
+HOMEPATH=\Users\nmm13
+ORIGINAL_PATH=/mingw64/bin:/usr/bin:/c/users/nmm13/bin:/c/Python39/Scripts:/c/Python39:/c/tools/ruby27/bin:/c/Program Files (x86)/Intel/iCLS Client:/c/Program Files/Intel/iCLS Client:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/cmd:/c/Program Files/PuTTY:/c/ProgramData/chocolatey/bin:/c/Program Files/Java/jdk1.8.0_211/bin:/c/ProgramData/chocolatey/lib/maven/apache-maven-3.6.3/bin:/c/Program Files/nodejs:/c/Program Files/Amazon/AWSCLIV2:/c/Program Files/Docker/Docker/resources/bin:/c/ProgramData/DockerDesktop/version-bin:/c/Users/nmm13/AppData/Local/Programs/Python/Python39/Scripts:/c/Users/nmm13/AppData/Local/Programs/Python/Python39:/c/NVPACK/android-sdk-windows/extras/android/support:/c/NVPACK/android-sdk-windows/build-tools:/c/NVPACK/android-sdk-windows/platform-tools:/c/NVPACK/android-sdk-windows/tools:/c/NVPACK/gradle-4.1/bin:/c/NVPACK/apache-ant-1.8.2/bin:/c/NVPACK/jdk1.8.0_77/bin:
+VBOX_MSI_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\
+RUBYOPT=-Eutf-8
+_=/usr/bin/env
+
+*********************************************************
+sba-kubernetes-64b5bd44d8-mvjrm\'s Environment Variables:
+*********************************************************
+
+ChocolateyToolsLocation=C:\tools
+USERDOMAIN=LAPTOP-AVIPDVH0
+OS=Windows_NT
+COMMONPROGRAMFILES=C:\Program Files\Common Files
+PROCESSOR_LEVEL=6
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+CommonProgramW6432=C:\Program Files\Common Files
+M2_HOME=C:\ProgramData\chocolatey\lib\maven\apache-maven-3.6.3
+ANDROID_HOME=C:\NVPACK\android-sdk-windows
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+MSYSTEM_CARCH=x86_64
+DISPLAY=needs-to-be-defined
+HOSTNAME=LAPTOP-AVIPDVH0
+PUBLIC=C:\Users\Public
+CONFIG_SITE=/mingw64/etc/config.site
+EXEPATH=C:\Program Files\Git
+NVPACK_ROOT=C:\\NVPACK
+MSYSTEM_CHOST=x86_64-w64-mingw32
+USERNAME=nmm13
+ChocolateyInstall=C:\ProgramData\chocolatey
+JAVA_HOME=C:\NVPACK\jdk1.8.0_77
+LOGONSERVER=\\LAPTOP-AVIPDVH0
+PROCESSOR_ARCHITECTURE=AMD64
+LOCALAPPDATA=C:\Users\nmm13\AppData\Local
+CLASSPATH=.;
+COMPUTERNAME=LAPTOP-AVIPDVH0
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+!::=::\
+NDKROOT=C:\NVPACK\android-ndk-r14b
+SYSTEMDRIVE=C:
+USERPROFILE=C:\Users\nmm13
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW
+SYSTEMROOT=C:\WINDOWS
+USERDOMAIN_ROAMINGPROFILE=LAPTOP-AVIPDVH0
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+GRADLE_HOME=C:\NVPACK\gradle-4.1
+MINGW_PACKAGE_PREFIX=mingw-w64-x86_64
+PWD=/c/Users/nmm13/Documents/DevOps/Kubernetes/sba.kubernetes-cluster
+SSH_ASKPASS=/mingw64/libexec/git-core/git-gui--askpass
+HOME=/c/users/nmm13
+TMP=/tmp
+LC_CTYPE=C.UTF-8
+TERM_PROGRAM=mintty
+TERM_PROGRAM_VERSION=3.4.2
+ANDROID_NDK_ROOT=C:\NVPACK\android-ndk-r14b
+JENKINS_HOME=C:\Program Files (x86)\Jenkins
+JENKINS=C:\Program Files (x86)\Jenkins\jenkins.exe
+MSYSTEM_PREFIX=/mingw64
+AWE_DIR=C:\Program Files (x86)\Khrona LLC\Awesomium SDK\1.6.6\
+OneDrive=C:\Users\nmm13\OneDrive
+PROCESSOR_REVISION=9e09
+FPS_BROWSER_USER_PROFILE_STRING=Default
+TMPDIR=/tmp
+NUMBER_OF_PROCESSORS=8
+ProgramW6432=C:\Program Files
+NVPACK_NDK_VERSION=android-ndk-r14b
+COMSPEC=C:\WINDOWS\system32\cmd.exe
+NDK_ROOT=C:\NVPACK\android-ndk-r14b
+APPDATA=C:\Users\nmm13\AppData\Roaming
+TERM=xterm
+SHELL=/usr/bin/bash
+WINDIR=C:\WINDOWS
+MINGW_CHOST=x86_64-w64-mingw32
+ProgramData=C:\ProgramData
+SHLVL=2
+PLINK_PROTOCOL=ssh
+PROGRAMFILES=C:\Program Files
+ACLOCAL_PATH=/mingw64/share/aclocal:/usr/share/aclocal
+MANPATH=/mingw64/local/man:/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man
+ORIGINAL_TEMP=/tmp
+ORIGINAL_TMP=/tmp
+NVPACK_NDK_TOOL_VERSION=4.9
+ALLUSERSPROFILE=C:\ProgramData
+TEMP=/tmp
+DriverData=C:\Windows\System32\Drivers\DriverData
+MSYSTEM=MINGW64
+MINGW_PREFIX=/mingw64
+SESSIONNAME=Console
+ANT_HOME=C:\NVPACK\apache-ant-1.8.2
+ProgramFiles(x86)=C:\Program Files (x86)
+PATH=/c/users/nmm13/bin:/mingw64/bin:/usr/local/bin:/usr/bin:/bin:/mingw64/bin:/usr/bin:/c/users/nmm13/bin:/c/Python39/Scripts:/c/Python39:/c/tools/ruby27/bin:/c/Program Files (x86)/Intel/iCLS Client:/c/Program Files/Intel/iCLS Client:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/cmd:/c/Program Files/PuTTY:/c/ProgramData/chocolatey/bin:/c/Program Files/Java/jdk1.8.0_211/bin:/c/ProgramData/chocolatey/lib/maven/apache-maven-3.6.3/bin:/c/Program Files/nodejs:/c/Program Files/Amazon/AWSCLIV2:/c/Program Files/Docker/Docker/resources/bin:/c/ProgramData/DockerDesktop/version-bin:/c/Users/nmm13/AppData/Local/Programs/Python/Python39/Scripts:/c/Users/nmm13/AppData/Local/Programs/Python/Python39:/c/NVPACK/android-sdk-windows/extras/android/support:/c/NVPACK/android-sdk-windows/build-tools:/c/NVPACK/android-sdk-windows/platform-tools:/c/NVPACK/android-sdk-windows/tools:/c/NVPACK/gradle-4.1/bin:/c/NVPACK/apache-ant-1.8.2/bin:/c/NVPACK/jdk1.8.0_77/bin::/usr/bin/vendor_perl:/usr/bin/core_perl
+HOMEDRIVE=C:
+ChocolateyLastPathUpdate=132520851652066203
+PKG_CONFIG_PATH=/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig
+INFOPATH=/usr/local/info:/usr/share/info:/usr/info:/share/info
+HOMEPATH=\Users\nmm13
+ORIGINAL_PATH=/mingw64/bin:/usr/bin:/c/users/nmm13/bin:/c/Python39/Scripts:/c/Python39:/c/tools/ruby27/bin:/c/Program Files (x86)/Intel/iCLS Client:/c/Program Files/Intel/iCLS Client:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/cmd:/c/Program Files/PuTTY:/c/ProgramData/chocolatey/bin:/c/Program Files/Java/jdk1.8.0_211/bin:/c/ProgramData/chocolatey/lib/maven/apache-maven-3.6.3/bin:/c/Program Files/nodejs:/c/Program Files/Amazon/AWSCLIV2:/c/Program Files/Docker/Docker/resources/bin:/c/ProgramData/DockerDesktop/version-bin:/c/Users/nmm13/AppData/Local/Programs/Python/Python39/Scripts:/c/Users/nmm13/AppData/Local/Programs/Python/Python39:/c/NVPACK/android-sdk-windows/extras/android/support:/c/NVPACK/android-sdk-windows/build-tools:/c/NVPACK/android-sdk-windows/platform-tools:/c/NVPACK/android-sdk-windows/tools:/c/NVPACK/gradle-4.1/bin:/c/NVPACK/apache-ant-1.8.2/bin:/c/NVPACK/jdk1.8.0_77/bin:
+VBOX_MSI_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\
+RUBYOPT=-Eutf-8
+_=/usr/bin/env
+
