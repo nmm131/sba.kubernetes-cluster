@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 COPY . .
 
 # install requirements.txt
-Run apt-get -y update
+RUN apt-get -y update
 RUN pip install -r requirements.txt
 
 # expose a port for the app
