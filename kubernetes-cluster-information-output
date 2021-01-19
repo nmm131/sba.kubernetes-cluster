@@ -2,10 +2,10 @@
 Get Namespaces:
 ***************
 NAME              STATUS   AGE
-default           Active   28h
-kube-node-lease   Active   28h
-kube-public       Active   28h
-kube-system       Active   28h
+default           Active   2d
+kube-node-lease   Active   2d
+kube-public       Active   2d
+kube-system       Active   2d
 
 ********************
 Describe Namespaces:
@@ -53,7 +53,7 @@ No LimitRange resource.
 Get Nodes:
 **********
 NAME       STATUS   ROLES    AGE   VERSION
-minikube   Ready    master   28h   v1.19.4
+minikube   Ready    master   2d    v1.19.4
 
 ***************
 Describe Nodes:
@@ -79,14 +79,14 @@ Unschedulable:      false
 Lease:
   HolderIdentity:  minikube
   AcquireTime:     <unset>
-  RenewTime:       Mon, 18 Jan 2021 18:48:09 -0500
+  RenewTime:       Tue, 19 Jan 2021 14:59:36 -0500
 Conditions:
   Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
   ----             ------  -----------------                 ------------------                ------                       -------
-  MemoryPressure   False   Mon, 18 Jan 2021 18:45:09 -0500   Sun, 17 Jan 2021 14:18:04 -0500   KubeletHasSufficientMemory   kubelet has sufficient memory available
-  DiskPressure     False   Mon, 18 Jan 2021 18:45:09 -0500   Sun, 17 Jan 2021 14:18:04 -0500   KubeletHasNoDiskPressure     kubelet has no disk pressure
-  PIDPressure      False   Mon, 18 Jan 2021 18:45:09 -0500   Sun, 17 Jan 2021 14:18:04 -0500   KubeletHasSufficientPID      kubelet has sufficient PID available
-  Ready            True    Mon, 18 Jan 2021 18:45:09 -0500   Sun, 17 Jan 2021 14:18:06 -0500   KubeletReady                 kubelet is posting ready status
+  MemoryPressure   False   Tue, 19 Jan 2021 14:58:28 -0500   Sun, 17 Jan 2021 14:18:04 -0500   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Tue, 19 Jan 2021 14:58:28 -0500   Sun, 17 Jan 2021 14:18:04 -0500   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Tue, 19 Jan 2021 14:58:28 -0500   Sun, 17 Jan 2021 14:18:04 -0500   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Tue, 19 Jan 2021 14:58:28 -0500   Sun, 17 Jan 2021 14:18:06 -0500   KubeletReady                 kubelet is posting ready status
 Addresses:
   InternalIP:  192.168.49.2
   Hostname:    minikube
@@ -103,9 +103,9 @@ Allocatable:
   memory:             12997996Ki
   pods:               110
 System Info:
-  Machine ID:                 8da0365dac4f47e584e597b25a334096
-  System UUID:                8da0365dac4f47e584e597b25a334096
-  Boot ID:                    264d4d00-dfec-46d7-adc8-26304ae44f0a
+  Machine ID:                 9fed344db6574439a5d634ed096eaed2
+  System UUID:                9fed344db6574439a5d634ed096eaed2
+  Boot ID:                    f1b603a1-b219-472a-8fa1-5f3a690a7a00
   Kernel Version:             4.19.128-microsoft-standard
   OS Image:                   Ubuntu 20.04.1 LTS
   Operating System:           linux
@@ -116,16 +116,16 @@ System Info:
 Non-terminated Pods:          (10 in total)
   Namespace                   Name                                CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
   ---------                   ----                                ------------  ----------  ---------------  -------------  ---
-  default                     sba-kubernetes-64b5bd44d8-57757     0 (0%)        0 (0%)      0 (0%)           0 (0%)         39m
-  default                     sba-kubernetes-64b5bd44d8-6fgng     0 (0%)        0 (0%)      0 (0%)           0 (0%)         39m
-  default                     sba-kubernetes-64b5bd44d8-mvjrm     0 (0%)        0 (0%)      0 (0%)           0 (0%)         39m
-  kube-system                 coredns-f9fd979d6-gm5pf             100m (1%)     0 (0%)      70Mi (0%)        170Mi (1%)     28h
-  kube-system                 etcd-minikube                       0 (0%)        0 (0%)      0 (0%)           0 (0%)         28h
-  kube-system                 kube-apiserver-minikube             250m (3%)     0 (0%)      0 (0%)           0 (0%)         28h
-  kube-system                 kube-controller-manager-minikube    200m (2%)     0 (0%)      0 (0%)           0 (0%)         28h
-  kube-system                 kube-proxy-68bxk                    0 (0%)        0 (0%)      0 (0%)           0 (0%)         28h
-  kube-system                 kube-scheduler-minikube             100m (1%)     0 (0%)      0 (0%)           0 (0%)         28h
-  kube-system                 storage-provisioner                 0 (0%)        0 (0%)      0 (0%)           0 (0%)         28h
+  default                     sba-kubernetes-578f4bcb8f-ghbbr     0 (0%)        0 (0%)      0 (0%)           0 (0%)         22m
+  default                     sba-kubernetes-578f4bcb8f-jgbr7     0 (0%)        0 (0%)      0 (0%)           0 (0%)         22m
+  default                     sba-kubernetes-578f4bcb8f-njcfr     0 (0%)        0 (0%)      0 (0%)           0 (0%)         22m
+  kube-system                 coredns-f9fd979d6-gm5pf             100m (1%)     0 (0%)      70Mi (0%)        170Mi (1%)     2d
+  kube-system                 etcd-minikube                       0 (0%)        0 (0%)      0 (0%)           0 (0%)         2d
+  kube-system                 kube-apiserver-minikube             250m (3%)     0 (0%)      0 (0%)           0 (0%)         2d
+  kube-system                 kube-controller-manager-minikube    200m (2%)     0 (0%)      0 (0%)           0 (0%)         2d
+  kube-system                 kube-proxy-68bxk                    0 (0%)        0 (0%)      0 (0%)           0 (0%)         2d
+  kube-system                 kube-scheduler-minikube             100m (1%)     0 (0%)      0 (0%)           0 (0%)         2d
+  kube-system                 storage-provisioner                 0 (0%)        0 (0%)      0 (0%)           0 (0%)         2d
 Allocated resources:
   (Total limits may be over 100 percent, i.e., overcommitted.)
   Resource           Requests   Limits
@@ -135,20 +135,38 @@ Allocated resources:
   ephemeral-storage  0 (0%)     0 (0%)
   hugepages-2Mi      0 (0%)     0 (0%)
 Events:
-  Type    Reason                   Age                From        Message
-  ----    ------                   ----               ----        -------
-  Normal  Starting                 43m                kubelet     Starting kubelet.
-  Normal  NodeAllocatableEnforced  43m                kubelet     Updated Node Allocatable limit across pods
-  Normal  NodeHasSufficientMemory  43m (x8 over 43m)  kubelet     Node minikube status is now: NodeHasSufficientMemory
-  Normal  NodeHasNoDiskPressure    43m (x8 over 43m)  kubelet     Node minikube status is now: NodeHasNoDiskPressure
-  Normal  NodeHasSufficientPID     43m (x7 over 43m)  kubelet     Node minikube status is now: NodeHasSufficientPID
-  Normal  Starting                 43m                kube-proxy  Starting kube-proxy.
+  Type    Reason                   Age                    From        Message
+  ----    ------                   ----                   ----        -------
+  Normal  Starting                 20h                    kubelet     Starting kubelet.
+  Normal  NodeAllocatableEnforced  20h                    kubelet     Updated Node Allocatable limit across pods
+  Normal  NodeHasSufficientMemory  20h (x8 over 20h)      kubelet     Node minikube status is now: NodeHasSufficientMemory
+  Normal  NodeHasNoDiskPressure    20h (x8 over 20h)      kubelet     Node minikube status is now: NodeHasNoDiskPressure
+  Normal  NodeHasSufficientPID     20h (x7 over 20h)      kubelet     Node minikube status is now: NodeHasSufficientPID
+  Normal  Starting                 20h                    kube-proxy  Starting kube-proxy.
+  Normal  Starting                 3h58m                  kubelet     Starting kubelet.
+  Normal  NodeHasSufficientMemory  3h58m (x8 over 3h58m)  kubelet     Node minikube status is now: NodeHasSufficientMemory
+  Normal  NodeHasNoDiskPressure    3h58m (x7 over 3h58m)  kubelet     Node minikube status is now: NodeHasNoDiskPressure
+  Normal  NodeHasSufficientPID     3h58m (x8 over 3h58m)  kubelet     Node minikube status is now: NodeHasSufficientPID
+  Normal  NodeAllocatableEnforced  3h58m                  kubelet     Updated Node Allocatable limit across pods
+  Normal  Starting                 3h58m                  kube-proxy  Starting kube-proxy.
+  Normal  NodeAllocatableEnforced  75m                    kubelet     Updated Node Allocatable limit across pods
+  Normal  Starting                 75m                    kubelet     Starting kubelet.
+  Normal  NodeHasNoDiskPressure    75m (x8 over 75m)      kubelet     Node minikube status is now: NodeHasNoDiskPressure
+  Normal  NodeHasSufficientPID     75m (x7 over 75m)      kubelet     Node minikube status is now: NodeHasSufficientPID
+  Normal  NodeHasSufficientMemory  75m (x8 over 75m)      kubelet     Node minikube status is now: NodeHasSufficientMemory
+  Normal  Starting                 75m                    kube-proxy  Starting kube-proxy.
+  Normal  Starting                 6m28s                  kubelet     Starting kubelet.
+  Normal  NodeAllocatableEnforced  6m28s                  kubelet     Updated Node Allocatable limit across pods
+  Normal  NodeHasSufficientMemory  6m27s (x8 over 6m28s)  kubelet     Node minikube status is now: NodeHasSufficientMemory
+  Normal  NodeHasNoDiskPressure    6m27s (x8 over 6m28s)  kubelet     Node minikube status is now: NodeHasNoDiskPressure
+  Normal  NodeHasSufficientPID     6m27s (x7 over 6m28s)  kubelet     Node minikube status is now: NodeHasSufficientPID
+  Normal  Starting                 6m18s                  kube-proxy  Starting kube-proxy.
 
 *************
 Get Services:
 *************
-NAME                 TYPE       CLUSTER-IP    EXTERNAL-IP   PORT(S)          AGE
-sba-kubernetes-svc   NodePort   10.104.0.79   <none>        8080:31000/TCP   39m
+NAME                 TYPE       CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+sba-kubernetes-svc   NodePort   10.107.205.134   <none>        8080:31000/TCP   22m
 
 ******************
 Descrube Services:
@@ -157,15 +175,15 @@ Name:                     sba-kubernetes-svc
 Namespace:                default
 Labels:                   <none>
 Annotations:              <none>
-Selector:                 app=sba-kubernetes
+Selector:                 app=web
 Type:                     NodePort
 IP Families:              <none>
-IP:                       10.104.0.79
+IP:                       10.107.205.134
 IPs:                      <none>
 Port:                     <unset>  8080/TCP
 TargetPort:               8080/TCP
 NodePort:                 <unset>  31000/TCP
-Endpoints:                <none>
+Endpoints:                172.17.0.3:8080,172.17.0.4:8080,172.17.0.5:8080
 Session Affinity:         None
 External Traffic Policy:  Cluster
 Events:                   <none>
@@ -173,42 +191,43 @@ Events:                   <none>
 *********
 Get Pods:
 *********
-NAME                              READY   STATUS    RESTARTS   AGE
-sba-kubernetes-64b5bd44d8-57757   1/1     Running   0          39m
-sba-kubernetes-64b5bd44d8-6fgng   1/1     Running   0          39m
-sba-kubernetes-64b5bd44d8-mvjrm   1/1     Running   0          39m
+NAME                              READY   STATUS    RESTARTS   AGE   IP           NODE       NOMINATED NODE   READINESS GATES
+sba-kubernetes-578f4bcb8f-ghbbr   1/1     Running   1          22m   172.17.0.5   minikube   <none>           <none>
+sba-kubernetes-578f4bcb8f-jgbr7   1/1     Running   1          22m   172.17.0.4   minikube   <none>           <none>
+sba-kubernetes-578f4bcb8f-njcfr   1/1     Running   1          22m   172.17.0.3   minikube   <none>           <none>
 
 **************
 Describe Pods:
 **************
-Name:         sba-kubernetes-64b5bd44d8-57757
+Name:         sba-kubernetes-578f4bcb8f-ghbbr
 Namespace:    default
 Priority:     0
 Node:         minikube/192.168.49.2
-Start Time:   Mon, 18 Jan 2021 18:08:41 -0500
+Start Time:   Tue, 19 Jan 2021 14:37:35 -0500
 Labels:       app=web
-              pod-template-hash=64b5bd44d8
+              pod-template-hash=578f4bcb8f
 Annotations:  <none>
 Status:       Running
 IP:           172.17.0.5
 IPs:
   IP:           172.17.0.5
-Controlled By:  ReplicaSet/sba-kubernetes-64b5bd44d8
+Controlled By:  ReplicaSet/sba-kubernetes-578f4bcb8f
 Containers:
   front-end:
-    Container ID:  docker://acb4d15a1ec50d6057845f3e31334435e4b4217eeda3e97cdeb8f20bb96208e8
-    Image:         nmm131/sba.kubernetes-cluster
-    Image ID:      docker-pullable://nmm131/sba.kubernetes-cluster@sha256:2a99621ee36625499cac936384de75da2809cd405557391b726327cf7cebeecb
-    Port:          8080/TCP
-    Host Port:     0/TCP
-    Command:
-      sleep
-    Args:
-      infinity
+    Container ID:   docker://1f89d345685f24453af5cd6c5c02d7de81165250b35094227e234014016742e0
+    Image:          nmm131/sba.kubernetes-cluster
+    Image ID:       docker-pullable://nmm131/sba.kubernetes-cluster@sha256:a5ba06085f806f343cb77fec616128d2a4d3725fce28a8996e042de78264bf27
+    Port:           8080/TCP
+    Host Port:      0/TCP
     State:          Running
-      Started:      Mon, 18 Jan 2021 18:08:45 -0500
+      Started:      Tue, 19 Jan 2021 14:53:45 -0500
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    255
+      Started:      Tue, 19 Jan 2021 14:38:19 -0500
+      Finished:     Tue, 19 Jan 2021 14:53:10 -0500
     Ready:          True
-    Restart Count:  0
+    Restart Count:  1
     Environment:    <none>
     Mounts:
       /var/run/secrets/kubernetes.io/serviceaccount from default-token-2lj9h (ro)
@@ -228,43 +247,49 @@ Node-Selectors:  <none>
 Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                  node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
 Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  39m   default-scheduler  Successfully assigned default/sba-kubernetes-64b5bd44d8-57757 to minikube
-  Normal  Pulling    39m   kubelet            Pulling image "nmm131/sba.kubernetes-cluster"
-  Normal  Pulled     39m   kubelet            Successfully pulled image "nmm131/sba.kubernetes-cluster" in 2.1038797s
-  Normal  Created    39m   kubelet            Created container front-end
-  Normal  Started    39m   kubelet            Started container front-end
+  Type    Reason          Age    From               Message
+  ----    ------          ----   ----               -------
+  Normal  Scheduled       22m    default-scheduler  Successfully assigned default/sba-kubernetes-578f4bcb8f-ghbbr to minikube
+  Normal  Pulling         22m    kubelet            Pulling image "nmm131/sba.kubernetes-cluster"
+  Normal  Pulled          21m    kubelet            Successfully pulled image "nmm131/sba.kubernetes-cluster" in 42.8905421s
+  Normal  Created         21m    kubelet            Created container front-end
+  Normal  Started         21m    kubelet            Started container front-end
+  Normal  SandboxChanged  6m21s  kubelet            Pod sandbox changed, it will be killed and re-created.
+  Normal  Pulling         6m20s  kubelet            Pulling image "nmm131/sba.kubernetes-cluster"
+  Normal  Pulled          6m3s   kubelet            Successfully pulled image "nmm131/sba.kubernetes-cluster" in 16.3917115s
+  Normal  Created         6m3s   kubelet            Created container front-end
+  Normal  Started         6m3s   kubelet            Started container front-end
 
 
-Name:         sba-kubernetes-64b5bd44d8-6fgng
+Name:         sba-kubernetes-578f4bcb8f-jgbr7
 Namespace:    default
 Priority:     0
 Node:         minikube/192.168.49.2
-Start Time:   Mon, 18 Jan 2021 18:08:41 -0500
+Start Time:   Tue, 19 Jan 2021 14:37:35 -0500
 Labels:       app=web
-              pod-template-hash=64b5bd44d8
+              pod-template-hash=578f4bcb8f
 Annotations:  <none>
 Status:       Running
 IP:           172.17.0.4
 IPs:
   IP:           172.17.0.4
-Controlled By:  ReplicaSet/sba-kubernetes-64b5bd44d8
+Controlled By:  ReplicaSet/sba-kubernetes-578f4bcb8f
 Containers:
   front-end:
-    Container ID:  docker://cff0a4d5049d16584cbdf2feccbea0673ac423ffebccc7b831d69e66ad27e3ef
-    Image:         nmm131/sba.kubernetes-cluster
-    Image ID:      docker-pullable://nmm131/sba.kubernetes-cluster@sha256:2a99621ee36625499cac936384de75da2809cd405557391b726327cf7cebeecb
-    Port:          8080/TCP
-    Host Port:     0/TCP
-    Command:
-      sleep
-    Args:
-      infinity
+    Container ID:   docker://b6f8672394603392656c25433caee7bebb4fe7acf4b11ed721f405e8cb6c7340
+    Image:          nmm131/sba.kubernetes-cluster
+    Image ID:       docker-pullable://nmm131/sba.kubernetes-cluster@sha256:a5ba06085f806f343cb77fec616128d2a4d3725fce28a8996e042de78264bf27
+    Port:           8080/TCP
+    Host Port:      0/TCP
     State:          Running
-      Started:      Mon, 18 Jan 2021 18:08:44 -0500
+      Started:      Tue, 19 Jan 2021 14:53:45 -0500
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    255
+      Started:      Tue, 19 Jan 2021 14:38:35 -0500
+      Finished:     Tue, 19 Jan 2021 14:53:10 -0500
     Ready:          True
-    Restart Count:  0
+    Restart Count:  1
     Environment:    <none>
     Mounts:
       /var/run/secrets/kubernetes.io/serviceaccount from default-token-2lj9h (ro)
@@ -284,43 +309,49 @@ Node-Selectors:  <none>
 Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                  node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
 Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  39m   default-scheduler  Successfully assigned default/sba-kubernetes-64b5bd44d8-6fgng to minikube
-  Normal  Pulling    39m   kubelet            Pulling image "nmm131/sba.kubernetes-cluster"
-  Normal  Pulled     39m   kubelet            Successfully pulled image "nmm131/sba.kubernetes-cluster" in 1.2360502s
-  Normal  Created    39m   kubelet            Created container front-end
-  Normal  Started    39m   kubelet            Started container front-end
+  Type    Reason          Age    From               Message
+  ----    ------          ----   ----               -------
+  Normal  Scheduled       22m    default-scheduler  Successfully assigned default/sba-kubernetes-578f4bcb8f-jgbr7 to minikube
+  Normal  Pulling         22m    kubelet            Pulling image "nmm131/sba.kubernetes-cluster"
+  Normal  Pulled          21m    kubelet            Successfully pulled image "nmm131/sba.kubernetes-cluster" in 58.3698076s
+  Normal  Created         21m    kubelet            Created container front-end
+  Normal  Started         21m    kubelet            Started container front-end
+  Normal  SandboxChanged  6m21s  kubelet            Pod sandbox changed, it will be killed and re-created.
+  Normal  Pulling         6m20s  kubelet            Pulling image "nmm131/sba.kubernetes-cluster"
+  Normal  Pulled          6m3s   kubelet            Successfully pulled image "nmm131/sba.kubernetes-cluster" in 16.8405639s
+  Normal  Created         6m3s   kubelet            Created container front-end
+  Normal  Started         6m3s   kubelet            Started container front-end
 
 
-Name:         sba-kubernetes-64b5bd44d8-mvjrm
+Name:         sba-kubernetes-578f4bcb8f-njcfr
 Namespace:    default
 Priority:     0
 Node:         minikube/192.168.49.2
-Start Time:   Mon, 18 Jan 2021 18:08:41 -0500
+Start Time:   Tue, 19 Jan 2021 14:37:35 -0500
 Labels:       app=web
-              pod-template-hash=64b5bd44d8
+              pod-template-hash=578f4bcb8f
 Annotations:  <none>
 Status:       Running
 IP:           172.17.0.3
 IPs:
   IP:           172.17.0.3
-Controlled By:  ReplicaSet/sba-kubernetes-64b5bd44d8
+Controlled By:  ReplicaSet/sba-kubernetes-578f4bcb8f
 Containers:
   front-end:
-    Container ID:  docker://c09b380785976f632f119a38cad0d997dc06c07041b076eee47b44f3a427737e
-    Image:         nmm131/sba.kubernetes-cluster
-    Image ID:      docker-pullable://nmm131/sba.kubernetes-cluster@sha256:2a99621ee36625499cac936384de75da2809cd405557391b726327cf7cebeecb
-    Port:          8080/TCP
-    Host Port:     0/TCP
-    Command:
-      sleep
-    Args:
-      infinity
+    Container ID:   docker://309516bb26c3bf100c7c8f9f6f5b0a4e3142186a54d0e34c1615d076e490f373
+    Image:          nmm131/sba.kubernetes-cluster
+    Image ID:       docker-pullable://nmm131/sba.kubernetes-cluster@sha256:a5ba06085f806f343cb77fec616128d2a4d3725fce28a8996e042de78264bf27
+    Port:           8080/TCP
+    Host Port:      0/TCP
     State:          Running
-      Started:      Mon, 18 Jan 2021 18:08:43 -0500
+      Started:      Tue, 19 Jan 2021 14:53:44 -0500
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    255
+      Started:      Tue, 19 Jan 2021 14:39:00 -0500
+      Finished:     Tue, 19 Jan 2021 14:53:10 -0500
     Ready:          True
-    Restart Count:  0
+    Restart Count:  1
     Environment:    <none>
     Mounts:
       /var/run/secrets/kubernetes.io/serviceaccount from default-token-2lj9h (ro)
@@ -340,28 +371,33 @@ Node-Selectors:  <none>
 Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                  node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
 Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  39m   default-scheduler  Successfully assigned default/sba-kubernetes-64b5bd44d8-mvjrm to minikube
-  Normal  Pulling    39m   kubelet            Pulling image "nmm131/sba.kubernetes-cluster"
-  Normal  Pulled     39m   kubelet            Successfully pulled image "nmm131/sba.kubernetes-cluster" in 604.3283ms
-  Normal  Created    39m   kubelet            Created container front-end
-  Normal  Started    39m   kubelet            Started container front-end
+  Type    Reason          Age    From               Message
+  ----    ------          ----   ----               -------
+  Normal  Scheduled       22m    default-scheduler  Successfully assigned default/sba-kubernetes-578f4bcb8f-njcfr to minikube
+  Normal  Pulling         22m    kubelet            Pulling image "nmm131/sba.kubernetes-cluster"
+  Normal  Pulled          20m    kubelet            Successfully pulled image "nmm131/sba.kubernetes-cluster" in 1m23.914588s
+  Normal  Created         20m    kubelet            Created container front-end
+  Normal  Started         20m    kubelet            Started container front-end
+  Normal  SandboxChanged  6m21s  kubelet            Pod sandbox changed, it will be killed and re-created.
+  Normal  Pulling         6m20s  kubelet            Pulling image "nmm131/sba.kubernetes-cluster"
+  Normal  Pulled          6m4s   kubelet            Successfully pulled image "nmm131/sba.kubernetes-cluster" in 15.8353226s
+  Normal  Created         6m4s   kubelet            Created container front-end
+  Normal  Started         6m4s   kubelet            Started container front-end
 
 ****************
 Get ReplicaSets:
 ****************
 NAME                        DESIRED   CURRENT   READY   AGE
-sba-kubernetes-64b5bd44d8   3         3         3       39m
+sba-kubernetes-578f4bcb8f   3         3         3       22m
 
 *********************
 Describe ReplicaSets:
 *********************
-Name:           sba-kubernetes-64b5bd44d8
+Name:           sba-kubernetes-578f4bcb8f
 Namespace:      default
-Selector:       app=web,pod-template-hash=64b5bd44d8
+Selector:       app=web,pod-template-hash=578f4bcb8f
 Labels:         app=web
-                pod-template-hash=64b5bd44d8
+                pod-template-hash=578f4bcb8f
 Annotations:    deployment.kubernetes.io/desired-replicas: 3
                 deployment.kubernetes.io/max-replicas: 4
                 deployment.kubernetes.io/revision: 1
@@ -370,38 +406,34 @@ Replicas:       3 current / 3 desired
 Pods Status:    3 Running / 0 Waiting / 0 Succeeded / 0 Failed
 Pod Template:
   Labels:  app=web
-           pod-template-hash=64b5bd44d8
+           pod-template-hash=578f4bcb8f
   Containers:
    front-end:
-    Image:      nmm131/sba.kubernetes-cluster
-    Port:       8080/TCP
-    Host Port:  0/TCP
-    Command:
-      sleep
-    Args:
-      infinity
+    Image:        nmm131/sba.kubernetes-cluster
+    Port:         8080/TCP
+    Host Port:    0/TCP
     Environment:  <none>
     Mounts:       <none>
   Volumes:        <none>
 Events:
   Type    Reason            Age   From                   Message
   ----    ------            ----  ----                   -------
-  Normal  SuccessfulCreate  39m   replicaset-controller  Created pod: sba-kubernetes-64b5bd44d8-6fgng
-  Normal  SuccessfulCreate  39m   replicaset-controller  Created pod: sba-kubernetes-64b5bd44d8-57757
-  Normal  SuccessfulCreate  39m   replicaset-controller  Created pod: sba-kubernetes-64b5bd44d8-mvjrm
+  Normal  SuccessfulCreate  22m   replicaset-controller  Created pod: sba-kubernetes-578f4bcb8f-ghbbr
+  Normal  SuccessfulCreate  22m   replicaset-controller  Created pod: sba-kubernetes-578f4bcb8f-njcfr
+  Normal  SuccessfulCreate  22m   replicaset-controller  Created pod: sba-kubernetes-578f4bcb8f-jgbr7
 
 ***************
 Get Deployment:
 ***************
 NAME             READY   UP-TO-DATE   AVAILABLE   AGE
-sba-kubernetes   3/3     3            3           39m
+sba-kubernetes   3/3     3            3           22m
 
 ********************
 Describe Deployment:
 ********************
 Name:                   sba-kubernetes
 Namespace:              default
-CreationTimestamp:      Mon, 18 Jan 2021 18:08:41 -0500
+CreationTimestamp:      Tue, 19 Jan 2021 14:37:35 -0500
 Labels:                 app=web
 Annotations:            deployment.kubernetes.io/revision: 1
 Selector:               app=web
@@ -413,78 +445,359 @@ Pod Template:
   Labels:  app=web
   Containers:
    front-end:
-    Image:      nmm131/sba.kubernetes-cluster
-    Port:       8080/TCP
-    Host Port:  0/TCP
-    Command:
-      sleep
-    Args:
-      infinity
+    Image:        nmm131/sba.kubernetes-cluster
+    Port:         8080/TCP
+    Host Port:    0/TCP
     Environment:  <none>
     Mounts:       <none>
   Volumes:        <none>
 Conditions:
   Type           Status  Reason
   ----           ------  ------
-  Available      True    MinimumReplicasAvailable
   Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
 OldReplicaSets:  <none>
-NewReplicaSet:   sba-kubernetes-64b5bd44d8 (3/3 replicas created)
+NewReplicaSet:   sba-kubernetes-578f4bcb8f (3/3 replicas created)
 Events:
   Type    Reason             Age   From                   Message
   ----    ------             ----  ----                   -------
-  Normal  ScalingReplicaSet  39m   deployment-controller  Scaled up replica set sba-kubernetes-64b5bd44d8 to 3
+  Normal  ScalingReplicaSet  22m   deployment-controller  Scaled up replica set sba-kubernetes-578f4bcb8f to 3
 
 **********************
 Get Deployment Events:
 **********************
-27h         Normal   Scheduled                 pod/sba-kubernetes-64b5bd44d8-2zxhn    Successfully assigned default/sba-kubernetes-64b5bd44d8-2zxhn to minikube
-27h         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Pulling image "nmm131/sba.kubernetes-cluster"
-27h         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-2zxhn    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 814.8831ms
-27h         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Created container front-end
-27h         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Started container front-end
-43m         Normal   SandboxChanged            pod/sba-kubernetes-64b5bd44d8-2zxhn    Pod sandbox changed, it will be killed and re-created.
-43m         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Pulling image "nmm131/sba.kubernetes-cluster"
-43m         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-2zxhn    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 9.9011451s
-43m         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Created container front-end
-43m         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Started container front-end
-41m         Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Stopping container front-end
-39m         Normal   Scheduled                 pod/sba-kubernetes-64b5bd44d8-57757    Successfully assigned default/sba-kubernetes-64b5bd44d8-57757 to minikube
-39m         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-57757    Pulling image "nmm131/sba.kubernetes-cluster"
-39m         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-57757    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 2.1038797s
-39m         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-57757    Created container front-end
-39m         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-57757    Started container front-end
-39m         Normal   Scheduled                 pod/sba-kubernetes-64b5bd44d8-6fgng    Successfully assigned default/sba-kubernetes-64b5bd44d8-6fgng to minikube
-39m         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-6fgng    Pulling image "nmm131/sba.kubernetes-cluster"
-39m         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-6fgng    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 1.2360502s
-39m         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-6fgng    Created container front-end
-39m         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-6fgng    Started container front-end
-28h         Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-l6rhv    Stopping container front-end
-28h         Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-lwsnj    Stopping container front-end
-39m         Normal   Scheduled                 pod/sba-kubernetes-64b5bd44d8-mvjrm    Successfully assigned default/sba-kubernetes-64b5bd44d8-mvjrm to minikube
-39m         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-mvjrm    Pulling image "nmm131/sba.kubernetes-cluster"
-39m         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-mvjrm    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 604.3283ms
-39m         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-mvjrm    Created container front-end
-39m         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-mvjrm    Started container front-end
-28h         Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-p6tnk    Stopping container front-end
-28h         Normal   Scheduled                 pod/sba-kubernetes-64b5bd44d8-ztxc8    Successfully assigned default/sba-kubernetes-64b5bd44d8-ztxc8 to minikube
-28h         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-ztxc8    Pulling image "nmm131/sba.kubernetes-cluster"
-28h         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-ztxc8    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 6.8355968s
-28h         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-ztxc8    Created container front-end
-28h         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-ztxc8    Started container front-end
-27h         Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-ztxc8    Stopping container front-end
-28h         Normal   SuccessfulCreate          replicaset/sba-kubernetes-64b5bd44d8   Created pod: sba-kubernetes-64b5bd44d8-ztxc8
-27h         Normal   SuccessfulCreate          replicaset/sba-kubernetes-64b5bd44d8   Created pod: sba-kubernetes-64b5bd44d8-2zxhn
-39m         Normal   SuccessfulCreate          replicaset/sba-kubernetes-64b5bd44d8   Created pod: sba-kubernetes-64b5bd44d8-6fgng
-39m         Normal   SuccessfulCreate          replicaset/sba-kubernetes-64b5bd44d8   Created pod: sba-kubernetes-64b5bd44d8-57757
-39m         Normal   SuccessfulCreate          replicaset/sba-kubernetes-64b5bd44d8   Created pod: sba-kubernetes-64b5bd44d8-mvjrm
-28h         Normal   ScalingReplicaSet         deployment/sba-kubernetes              Scaled up replica set sba-kubernetes-64b5bd44d8 to 1
-27h         Normal   ScalingReplicaSet         deployment/sba-kubernetes              Scaled up replica set sba-kubernetes-64b5bd44d8 to 1
-39m         Normal   ScalingReplicaSet         deployment/sba-kubernetes              Scaled up replica set sba-kubernetes-64b5bd44d8 to 3
+48m         Normal   Scheduled                 pod/sba-kubernetes-578f4bcb8f-2lqvk    Successfully assigned default/sba-kubernetes-578f4bcb8f-2lqvk to minikube
+48m         Normal   Pulling                   pod/sba-kubernetes-578f4bcb8f-2lqvk    Pulling image "nmm131/sba.kubernetes-cluster"
+47m         Normal   Pulled                    pod/sba-kubernetes-578f4bcb8f-2lqvk    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 1m5.4811016s
+47m         Normal   Created                   pod/sba-kubernetes-578f4bcb8f-2lqvk    Created container front-end
+47m         Normal   Started                   pod/sba-kubernetes-578f4bcb8f-2lqvk    Started container front-end
+24m         Normal   Killing                   pod/sba-kubernetes-578f4bcb8f-2lqvk    Stopping container front-end
+48m         Normal   Scheduled                 pod/sba-kubernetes-578f4bcb8f-67hwz    Successfully assigned default/sba-kubernetes-578f4bcb8f-67hwz to minikube
+48m         Normal   Pulling                   pod/sba-kubernetes-578f4bcb8f-67hwz    Pulling image "nmm131/sba.kubernetes-cluster"
+47m         Normal   Pulled                    pod/sba-kubernetes-578f4bcb8f-67hwz    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 1m4.7460863s
+47m         Normal   Created                   pod/sba-kubernetes-578f4bcb8f-67hwz    Created container front-end
+47m         Normal   Started                   pod/sba-kubernetes-578f4bcb8f-67hwz    Started container front-end
+24m         Normal   Killing                   pod/sba-kubernetes-578f4bcb8f-67hwz    Stopping container front-end
+48m         Normal   Scheduled                 pod/sba-kubernetes-578f4bcb8f-cfdl6    Successfully assigned default/sba-kubernetes-578f4bcb8f-cfdl6 to minikube
+48m         Normal   Pulling                   pod/sba-kubernetes-578f4bcb8f-cfdl6    Pulling image "nmm131/sba.kubernetes-cluster"
+48m         Normal   Pulled                    pod/sba-kubernetes-578f4bcb8f-cfdl6    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 32.5824006s
+48m         Normal   Created                   pod/sba-kubernetes-578f4bcb8f-cfdl6    Created container front-end
+48m         Normal   Started                   pod/sba-kubernetes-578f4bcb8f-cfdl6    Started container front-end
+24m         Normal   Killing                   pod/sba-kubernetes-578f4bcb8f-cfdl6    Stopping container front-end
+22m         Normal   Scheduled                 pod/sba-kubernetes-578f4bcb8f-ghbbr    Successfully assigned default/sba-kubernetes-578f4bcb8f-ghbbr to minikube
+22m         Normal   Pulling                   pod/sba-kubernetes-578f4bcb8f-ghbbr    Pulling image "nmm131/sba.kubernetes-cluster"
+21m         Normal   Pulled                    pod/sba-kubernetes-578f4bcb8f-ghbbr    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 42.8905421s
+21m         Normal   Created                   pod/sba-kubernetes-578f4bcb8f-ghbbr    Created container front-end
+21m         Normal   Started                   pod/sba-kubernetes-578f4bcb8f-ghbbr    Started container front-end
+6m21s       Normal   SandboxChanged            pod/sba-kubernetes-578f4bcb8f-ghbbr    Pod sandbox changed, it will be killed and re-created.
+6m20s       Normal   Pulling                   pod/sba-kubernetes-578f4bcb8f-ghbbr    Pulling image "nmm131/sba.kubernetes-cluster"
+6m3s        Normal   Pulled                    pod/sba-kubernetes-578f4bcb8f-ghbbr    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 16.3917115s
+6m3s        Normal   Created                   pod/sba-kubernetes-578f4bcb8f-ghbbr    Created container front-end
+6m3s        Normal   Started                   pod/sba-kubernetes-578f4bcb8f-ghbbr    Started container front-end
+22m         Normal   Scheduled                 pod/sba-kubernetes-578f4bcb8f-jgbr7    Successfully assigned default/sba-kubernetes-578f4bcb8f-jgbr7 to minikube
+22m         Normal   Pulling                   pod/sba-kubernetes-578f4bcb8f-jgbr7    Pulling image "nmm131/sba.kubernetes-cluster"
+21m         Normal   Pulled                    pod/sba-kubernetes-578f4bcb8f-jgbr7    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 58.3698076s
+21m         Normal   Created                   pod/sba-kubernetes-578f4bcb8f-jgbr7    Created container front-end
+21m         Normal   Started                   pod/sba-kubernetes-578f4bcb8f-jgbr7    Started container front-end
+6m21s       Normal   SandboxChanged            pod/sba-kubernetes-578f4bcb8f-jgbr7    Pod sandbox changed, it will be killed and re-created.
+6m20s       Normal   Pulling                   pod/sba-kubernetes-578f4bcb8f-jgbr7    Pulling image "nmm131/sba.kubernetes-cluster"
+6m3s        Normal   Pulled                    pod/sba-kubernetes-578f4bcb8f-jgbr7    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 16.8405639s
+6m3s        Normal   Created                   pod/sba-kubernetes-578f4bcb8f-jgbr7    Created container front-end
+6m3s        Normal   Started                   pod/sba-kubernetes-578f4bcb8f-jgbr7    Started container front-end
+22m         Normal   Scheduled                 pod/sba-kubernetes-578f4bcb8f-njcfr    Successfully assigned default/sba-kubernetes-578f4bcb8f-njcfr to minikube
+22m         Normal   Pulling                   pod/sba-kubernetes-578f4bcb8f-njcfr    Pulling image "nmm131/sba.kubernetes-cluster"
+20m         Normal   Pulled                    pod/sba-kubernetes-578f4bcb8f-njcfr    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 1m23.914588s
+20m         Normal   Created                   pod/sba-kubernetes-578f4bcb8f-njcfr    Created container front-end
+20m         Normal   Started                   pod/sba-kubernetes-578f4bcb8f-njcfr    Started container front-end
+6m21s       Normal   SandboxChanged            pod/sba-kubernetes-578f4bcb8f-njcfr    Pod sandbox changed, it will be killed and re-created.
+6m20s       Normal   Pulling                   pod/sba-kubernetes-578f4bcb8f-njcfr    Pulling image "nmm131/sba.kubernetes-cluster"
+6m4s        Normal   Pulled                    pod/sba-kubernetes-578f4bcb8f-njcfr    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 15.8353226s
+6m4s        Normal   Created                   pod/sba-kubernetes-578f4bcb8f-njcfr    Created container front-end
+6m4s        Normal   Started                   pod/sba-kubernetes-578f4bcb8f-njcfr    Started container front-end
+48m         Normal   SuccessfulCreate          replicaset/sba-kubernetes-578f4bcb8f   Created pod: sba-kubernetes-578f4bcb8f-cfdl6
+48m         Normal   SuccessfulCreate          replicaset/sba-kubernetes-578f4bcb8f   Created pod: sba-kubernetes-578f4bcb8f-2lqvk
+48m         Normal   SuccessfulCreate          replicaset/sba-kubernetes-578f4bcb8f   Created pod: sba-kubernetes-578f4bcb8f-67hwz
+22m         Normal   SuccessfulCreate          replicaset/sba-kubernetes-578f4bcb8f   Created pod: sba-kubernetes-578f4bcb8f-ghbbr
+22m         Normal   SuccessfulCreate          replicaset/sba-kubernetes-578f4bcb8f   Created pod: sba-kubernetes-578f4bcb8f-njcfr
+22m         Normal   SuccessfulCreate          replicaset/sba-kubernetes-578f4bcb8f   Created pod: sba-kubernetes-578f4bcb8f-jgbr7
+47h         Normal   Scheduled                 pod/sba-kubernetes-64b5bd44d8-2zxhn    Successfully assigned default/sba-kubernetes-64b5bd44d8-2zxhn to minikube
+47h         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Pulling image "nmm131/sba.kubernetes-cluster"
+47h         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-2zxhn    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 814.8831ms
+47h         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Created container front-end
+47h         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Started container front-end
+20h         Normal   SandboxChanged            pod/sba-kubernetes-64b5bd44d8-2zxhn    Pod sandbox changed, it will be killed and re-created.
+20h         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Pulling image "nmm131/sba.kubernetes-cluster"
+20h         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-2zxhn    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 9.9011451s
+20h         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Created container front-end
+20h         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Started container front-end
+20h         Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-2zxhn    Stopping container front-end
+20h         Normal   Scheduled                 pod/sba-kubernetes-64b5bd44d8-57757    Successfully assigned default/sba-kubernetes-64b5bd44d8-57757 to minikube
+20h         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-57757    Pulling image "nmm131/sba.kubernetes-cluster"
+20h         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-57757    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 2.1038797s
+20h         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-57757    Created container front-end
+20h         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-57757    Started container front-end
+3h58m       Normal   SandboxChanged            pod/sba-kubernetes-64b5bd44d8-57757    Pod sandbox changed, it will be killed and re-created.
+3h58m       Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-57757    Pulling image "nmm131/sba.kubernetes-cluster"
+3h58m       Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-57757    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 3.393793s
+3h58m       Normal   Created                   pod/sba-kubernetes-64b5bd44d8-57757    Created container front-end
+3h58m       Normal   Started                   pod/sba-kubernetes-64b5bd44d8-57757    Started container front-end
+75m         Normal   SandboxChanged            pod/sba-kubernetes-64b5bd44d8-57757    Pod sandbox changed, it will be killed and re-created.
+75m         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-57757    Pulling image "nmm131/sba.kubernetes-cluster"
+74m         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-57757    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 45.2130918s
+74m         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-57757    Created container front-end
+74m         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-57757    Started container front-end
+73m         Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-57757    Stopping container front-end
+20h         Normal   Scheduled                 pod/sba-kubernetes-64b5bd44d8-6fgng    Successfully assigned default/sba-kubernetes-64b5bd44d8-6fgng to minikube
+20h         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-6fgng    Pulling image "nmm131/sba.kubernetes-cluster"
+20h         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-6fgng    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 1.2360502s
+20h         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-6fgng    Created container front-end
+20h         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-6fgng    Started container front-end
+3h58m       Normal   SandboxChanged            pod/sba-kubernetes-64b5bd44d8-6fgng    Pod sandbox changed, it will be killed and re-created.
+3h58m       Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-6fgng    Pulling image "nmm131/sba.kubernetes-cluster"
+3h58m       Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-6fgng    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 1.8885097s
+3h58m       Normal   Created                   pod/sba-kubernetes-64b5bd44d8-6fgng    Created container front-end
+3h58m       Normal   Started                   pod/sba-kubernetes-64b5bd44d8-6fgng    Started container front-end
+75m         Normal   SandboxChanged            pod/sba-kubernetes-64b5bd44d8-6fgng    Pod sandbox changed, it will be killed and re-created.
+75m         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-6fgng    Pulling image "nmm131/sba.kubernetes-cluster"
+74m         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-6fgng    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 30.0061529s
+74m         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-6fgng    Created container front-end
+74m         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-6fgng    Started container front-end
+73m         Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-6fgng    Stopping container front-end
+71m         Normal   Scheduled                 pod/sba-kubernetes-64b5bd44d8-c85vp    Successfully assigned default/sba-kubernetes-64b5bd44d8-c85vp to minikube
+71m         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-c85vp    Pulling image "nmm131/sba.kubernetes-cluster"
+71m         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-c85vp    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 23.5199439s
+71m         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-c85vp    Created container front-end
+71m         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-c85vp    Started container front-end
+49m         Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-c85vp    Stopping container front-end
+71m         Normal   Scheduled                 pod/sba-kubernetes-64b5bd44d8-g6rkc    Successfully assigned default/sba-kubernetes-64b5bd44d8-g6rkc to minikube
+71m         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-g6rkc    Pulling image "nmm131/sba.kubernetes-cluster"
+71m         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-g6rkc    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 15.801539s
+71m         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-g6rkc    Created container front-end
+71m         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-g6rkc    Started container front-end
+49m         Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-g6rkc    Stopping container front-end
+2d          Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-l6rhv    Stopping container front-end
+2d          Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-lwsnj    Stopping container front-end
+20h         Normal   Scheduled                 pod/sba-kubernetes-64b5bd44d8-mvjrm    Successfully assigned default/sba-kubernetes-64b5bd44d8-mvjrm to minikube
+20h         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-mvjrm    Pulling image "nmm131/sba.kubernetes-cluster"
+20h         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-mvjrm    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 604.3283ms
+20h         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-mvjrm    Created container front-end
+20h         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-mvjrm    Started container front-end
+3h58m       Normal   SandboxChanged            pod/sba-kubernetes-64b5bd44d8-mvjrm    Pod sandbox changed, it will be killed and re-created.
+3h58m       Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-mvjrm    Pulling image "nmm131/sba.kubernetes-cluster"
+3h58m       Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-mvjrm    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 3.7370924s
+3h58m       Normal   Created                   pod/sba-kubernetes-64b5bd44d8-mvjrm    Created container front-end
+3h58m       Normal   Started                   pod/sba-kubernetes-64b5bd44d8-mvjrm    Started container front-end
+75m         Normal   SandboxChanged            pod/sba-kubernetes-64b5bd44d8-mvjrm    Pod sandbox changed, it will be killed and re-created.
+75m         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-mvjrm    Pulling image "nmm131/sba.kubernetes-cluster"
+74m         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-mvjrm    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 45.7081773s
+74m         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-mvjrm    Created container front-end
+74m         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-mvjrm    Started container front-end
+73m         Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-mvjrm    Stopping container front-end
+2d          Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-p6tnk    Stopping container front-end
+71m         Normal   Scheduled                 pod/sba-kubernetes-64b5bd44d8-tgzjw    Successfully assigned default/sba-kubernetes-64b5bd44d8-tgzjw to minikube
+71m         Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-tgzjw    Pulling image "nmm131/sba.kubernetes-cluster"
+71m         Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-tgzjw    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 17.5569597s
+71m         Normal   Created                   pod/sba-kubernetes-64b5bd44d8-tgzjw    Created container front-end
+71m         Normal   Started                   pod/sba-kubernetes-64b5bd44d8-tgzjw    Started container front-end
+49m         Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-tgzjw    Stopping container front-end
+2d          Normal   Scheduled                 pod/sba-kubernetes-64b5bd44d8-ztxc8    Successfully assigned default/sba-kubernetes-64b5bd44d8-ztxc8 to minikube
+2d          Normal   Pulling                   pod/sba-kubernetes-64b5bd44d8-ztxc8    Pulling image "nmm131/sba.kubernetes-cluster"
+2d          Normal   Pulled                    pod/sba-kubernetes-64b5bd44d8-ztxc8    Successfully pulled image "nmm131/sba.kubernetes-cluster" in 6.8355968s
+2d          Normal   Created                   pod/sba-kubernetes-64b5bd44d8-ztxc8    Created container front-end
+2d          Normal   Started                   pod/sba-kubernetes-64b5bd44d8-ztxc8    Started container front-end
+47h         Normal   Killing                   pod/sba-kubernetes-64b5bd44d8-ztxc8    Stopping container front-end
+2d          Normal   SuccessfulCreate          replicaset/sba-kubernetes-64b5bd44d8   Created pod: sba-kubernetes-64b5bd44d8-ztxc8
+47h         Normal   SuccessfulCreate          replicaset/sba-kubernetes-64b5bd44d8   Created pod: sba-kubernetes-64b5bd44d8-2zxhn
+20h         Normal   SuccessfulCreate          replicaset/sba-kubernetes-64b5bd44d8   Created pod: sba-kubernetes-64b5bd44d8-6fgng
+20h         Normal   SuccessfulCreate          replicaset/sba-kubernetes-64b5bd44d8   Created pod: sba-kubernetes-64b5bd44d8-57757
+20h         Normal   SuccessfulCreate          replicaset/sba-kubernetes-64b5bd44d8   Created pod: sba-kubernetes-64b5bd44d8-mvjrm
+71m         Normal   SuccessfulCreate          replicaset/sba-kubernetes-64b5bd44d8   Created pod: sba-kubernetes-64b5bd44d8-g6rkc
+71m         Normal   SuccessfulCreate          replicaset/sba-kubernetes-64b5bd44d8   Created pod: sba-kubernetes-64b5bd44d8-c85vp
+71m         Normal   SuccessfulCreate          replicaset/sba-kubernetes-64b5bd44d8   Created pod: sba-kubernetes-64b5bd44d8-tgzjw
+2d          Normal   ScalingReplicaSet         deployment/sba-kubernetes              Scaled up replica set sba-kubernetes-64b5bd44d8 to 1
+47h         Normal   ScalingReplicaSet         deployment/sba-kubernetes              Scaled up replica set sba-kubernetes-64b5bd44d8 to 1
+20h         Normal   ScalingReplicaSet         deployment/sba-kubernetes              Scaled up replica set sba-kubernetes-64b5bd44d8 to 3
+71m         Normal   ScalingReplicaSet         deployment/sba-kubernetes              Scaled up replica set sba-kubernetes-64b5bd44d8 to 3
+48m         Normal   ScalingReplicaSet         deployment/sba-kubernetes              Scaled up replica set sba-kubernetes-578f4bcb8f to 3
+22m         Normal   ScalingReplicaSet         deployment/sba-kubernetes              Scaled up replica set sba-kubernetes-578f4bcb8f to 3
 
 ***************************
 Describe Deployment Events:
 ***************************
+Name:             sba-kubernetes-578f4bcb8f-2lqvk.165bb7dfdb37497c
+  Name:              sba-kubernetes-578f4bcb8f-2lqvk
+Message:             Successfully assigned default/sba-kubernetes-578f4bcb8f-2lqvk to minikube
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-2lqvk.165bb7dfdb37497c
+Name:             sba-kubernetes-578f4bcb8f-2lqvk.165bb7e03226c244
+  Name:              sba-kubernetes-578f4bcb8f-2lqvk
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-2lqvk.165bb7e03226c244
+Name:             sba-kubernetes-578f4bcb8f-2lqvk.165bb7ef7121944c
+  Name:              sba-kubernetes-578f4bcb8f-2lqvk
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-2lqvk.165bb7ef7121944c
+Name:             sba-kubernetes-578f4bcb8f-2lqvk.165bb7ef758aab2c
+  Name:              sba-kubernetes-578f4bcb8f-2lqvk
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-2lqvk.165bb7ef758aab2c
+Name:             sba-kubernetes-578f4bcb8f-2lqvk.165bb7ef7f2b71fc
+  Name:              sba-kubernetes-578f4bcb8f-2lqvk
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-2lqvk.165bb7ef7f2b71fc
+Name:             sba-kubernetes-578f4bcb8f-2lqvk.165bb92bdfb658b0
+  Name:              sba-kubernetes-578f4bcb8f-2lqvk
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-2lqvk.165bb92bdfb658b0
+Name:             sba-kubernetes-578f4bcb8f-67hwz.165bb7dfdc123410
+  Name:              sba-kubernetes-578f4bcb8f-67hwz
+Message:             Successfully assigned default/sba-kubernetes-578f4bcb8f-67hwz to minikube
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-67hwz.165bb7dfdc123410
+Name:             sba-kubernetes-578f4bcb8f-67hwz.165bb7e02dce9190
+  Name:              sba-kubernetes-578f4bcb8f-67hwz
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-67hwz.165bb7e02dce9190
+Name:             sba-kubernetes-578f4bcb8f-67hwz.165bb7ef40f9e0e4
+  Name:              sba-kubernetes-578f4bcb8f-67hwz
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-67hwz.165bb7ef40f9e0e4
+Name:             sba-kubernetes-578f4bcb8f-67hwz.165bb7ef451b82cc
+  Name:              sba-kubernetes-578f4bcb8f-67hwz
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-67hwz.165bb7ef451b82cc
+Name:             sba-kubernetes-578f4bcb8f-67hwz.165bb7ef4d1f8158
+  Name:              sba-kubernetes-578f4bcb8f-67hwz
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-67hwz.165bb7ef4d1f8158
+Name:             sba-kubernetes-578f4bcb8f-67hwz.165bb92bdfc9a104
+  Name:              sba-kubernetes-578f4bcb8f-67hwz
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-67hwz.165bb92bdfc9a104
+Name:             sba-kubernetes-578f4bcb8f-cfdl6.165bb7dfda82d2a8
+  Name:              sba-kubernetes-578f4bcb8f-cfdl6
+Message:             Successfully assigned default/sba-kubernetes-578f4bcb8f-cfdl6 to minikube
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-cfdl6.165bb7dfda82d2a8
+Name:             sba-kubernetes-578f4bcb8f-cfdl6.165bb7e029c4f800
+  Name:              sba-kubernetes-578f4bcb8f-cfdl6
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-cfdl6.165bb7e029c4f800
+Name:             sba-kubernetes-578f4bcb8f-cfdl6.165bb7e7bfd545f0
+  Name:              sba-kubernetes-578f4bcb8f-cfdl6
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-cfdl6.165bb7e7bfd545f0
+Name:             sba-kubernetes-578f4bcb8f-cfdl6.165bb7e7ce9211e0
+  Name:              sba-kubernetes-578f4bcb8f-cfdl6
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-cfdl6.165bb7e7ce9211e0
+Name:             sba-kubernetes-578f4bcb8f-cfdl6.165bb7e7d5f7f058
+  Name:              sba-kubernetes-578f4bcb8f-cfdl6
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-cfdl6.165bb7e7d5f7f058
+Name:             sba-kubernetes-578f4bcb8f-cfdl6.165bb92bdf9ca6f4
+  Name:              sba-kubernetes-578f4bcb8f-cfdl6
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-cfdl6.165bb92bdf9ca6f4
+Name:             sba-kubernetes-578f4bcb8f-ghbbr.165bb952769828b4
+  Name:              sba-kubernetes-578f4bcb8f-ghbbr
+Message:             Successfully assigned default/sba-kubernetes-578f4bcb8f-ghbbr to minikube
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-ghbbr.165bb952769828b4
+Name:             sba-kubernetes-578f4bcb8f-ghbbr.165bb952ab5b7e0c
+  Name:              sba-kubernetes-578f4bcb8f-ghbbr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-ghbbr.165bb952ab5b7e0c
+Name:             sba-kubernetes-578f4bcb8f-ghbbr.165bb95ca7d60798
+  Name:              sba-kubernetes-578f4bcb8f-ghbbr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-ghbbr.165bb95ca7d60798
+Name:             sba-kubernetes-578f4bcb8f-ghbbr.165bb95cb9b9a280
+  Name:              sba-kubernetes-578f4bcb8f-ghbbr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-ghbbr.165bb95cb9b9a280
+Name:             sba-kubernetes-578f4bcb8f-ghbbr.165bb95cc141cbe0
+  Name:              sba-kubernetes-578f4bcb8f-ghbbr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-ghbbr.165bb95cc141cbe0
+Name:             sba-kubernetes-578f4bcb8f-ghbbr.165bba3005538ca0
+  Name:              sba-kubernetes-578f4bcb8f-ghbbr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-ghbbr.165bba3005538ca0
+Name:             sba-kubernetes-578f4bcb8f-ghbbr.165bba3062ef6e88
+  Name:              sba-kubernetes-578f4bcb8f-ghbbr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-ghbbr.165bba3062ef6e88
+Name:             sba-kubernetes-578f4bcb8f-ghbbr.165bba3433f56494
+  Name:              sba-kubernetes-578f4bcb8f-ghbbr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-ghbbr.165bba3433f56494
+Name:             sba-kubernetes-578f4bcb8f-ghbbr.165bba34383a733c
+  Name:              sba-kubernetes-578f4bcb8f-ghbbr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-ghbbr.165bba34383a733c
+Name:             sba-kubernetes-578f4bcb8f-ghbbr.165bba343de068dc
+  Name:              sba-kubernetes-578f4bcb8f-ghbbr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-ghbbr.165bba343de068dc
+Name:             sba-kubernetes-578f4bcb8f-jgbr7.165bb952773e0798
+  Name:              sba-kubernetes-578f4bcb8f-jgbr7
+Message:             Successfully assigned default/sba-kubernetes-578f4bcb8f-jgbr7 to minikube
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-jgbr7.165bb952773e0798
+Name:             sba-kubernetes-578f4bcb8f-jgbr7.165bb952ba5491a0
+  Name:              sba-kubernetes-578f4bcb8f-jgbr7
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-jgbr7.165bb952ba5491a0
+Name:             sba-kubernetes-578f4bcb8f-jgbr7.165bb96051715700
+  Name:              sba-kubernetes-578f4bcb8f-jgbr7
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-jgbr7.165bb96051715700
+Name:             sba-kubernetes-578f4bcb8f-jgbr7.165bb9605514423c
+  Name:              sba-kubernetes-578f4bcb8f-jgbr7
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-jgbr7.165bb9605514423c
+Name:             sba-kubernetes-578f4bcb8f-jgbr7.165bb9605b25b250
+  Name:              sba-kubernetes-578f4bcb8f-jgbr7
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-jgbr7.165bb9605b25b250
+Name:             sba-kubernetes-578f4bcb8f-jgbr7.165bba3004ed8b58
+  Name:              sba-kubernetes-578f4bcb8f-jgbr7
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-jgbr7.165bba3004ed8b58
+Name:             sba-kubernetes-578f4bcb8f-jgbr7.165bba306bf85b84
+  Name:              sba-kubernetes-578f4bcb8f-jgbr7
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-jgbr7.165bba306bf85b84
+Name:             sba-kubernetes-578f4bcb8f-jgbr7.165bba3457bf6dd4
+  Name:              sba-kubernetes-578f4bcb8f-jgbr7
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-jgbr7.165bba3457bf6dd4
+Name:             sba-kubernetes-578f4bcb8f-jgbr7.165bba345ca4213c
+  Name:              sba-kubernetes-578f4bcb8f-jgbr7
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-jgbr7.165bba345ca4213c
+Name:             sba-kubernetes-578f4bcb8f-jgbr7.165bba34623d8d18
+  Name:              sba-kubernetes-578f4bcb8f-jgbr7
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-jgbr7.165bba34623d8d18
+Name:             sba-kubernetes-578f4bcb8f-njcfr.165bb952773ec50c
+  Name:              sba-kubernetes-578f4bcb8f-njcfr
+Message:             Successfully assigned default/sba-kubernetes-578f4bcb8f-njcfr to minikube
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-njcfr.165bb952773ec50c
+Name:             sba-kubernetes-578f4bcb8f-njcfr.165bb952beb73874
+  Name:              sba-kubernetes-578f4bcb8f-njcfr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-njcfr.165bb952beb73874
+Name:             sba-kubernetes-578f4bcb8f-njcfr.165bb966486a5db8
+  Name:              sba-kubernetes-578f4bcb8f-njcfr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-njcfr.165bb966486a5db8
+Name:             sba-kubernetes-578f4bcb8f-njcfr.165bb9664c88fe18
+  Name:              sba-kubernetes-578f4bcb8f-njcfr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-njcfr.165bb9664c88fe18
+Name:             sba-kubernetes-578f4bcb8f-njcfr.165bb96653b41678
+  Name:              sba-kubernetes-578f4bcb8f-njcfr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-njcfr.165bb96653b41678
+Name:             sba-kubernetes-578f4bcb8f-njcfr.165bba3005d19a8c
+  Name:              sba-kubernetes-578f4bcb8f-njcfr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-njcfr.165bba3005d19a8c
+Name:             sba-kubernetes-578f4bcb8f-njcfr.165bba3052359950
+  Name:              sba-kubernetes-578f4bcb8f-njcfr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-njcfr.165bba3052359950
+Name:             sba-kubernetes-578f4bcb8f-njcfr.165bba340211f514
+  Name:              sba-kubernetes-578f4bcb8f-njcfr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-njcfr.165bba340211f514
+Name:             sba-kubernetes-578f4bcb8f-njcfr.165bba34065b8608
+  Name:              sba-kubernetes-578f4bcb8f-njcfr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-njcfr.165bba34065b8608
+Name:             sba-kubernetes-578f4bcb8f-njcfr.165bba340d9c8958
+  Name:              sba-kubernetes-578f4bcb8f-njcfr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f-njcfr.165bba340d9c8958
+Name:             sba-kubernetes-578f4bcb8f.165bb7dfd947d1a4
+  Name:              sba-kubernetes-578f4bcb8f
+Message:             Created pod: sba-kubernetes-578f4bcb8f-cfdl6
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f.165bb7dfd947d1a4
+Name:             sba-kubernetes-578f4bcb8f.165bb7dfda9456a4
+  Name:              sba-kubernetes-578f4bcb8f
+Message:             Created pod: sba-kubernetes-578f4bcb8f-2lqvk
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f.165bb7dfda9456a4
+Name:             sba-kubernetes-578f4bcb8f.165bb7dfda9457d0
+  Name:              sba-kubernetes-578f4bcb8f
+Message:             Created pod: sba-kubernetes-578f4bcb8f-67hwz
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f.165bb7dfda9457d0
+Name:             sba-kubernetes-578f4bcb8f.165bb952764d93bc
+  Name:              sba-kubernetes-578f4bcb8f
+Message:             Created pod: sba-kubernetes-578f4bcb8f-ghbbr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f.165bb952764d93bc
+Name:             sba-kubernetes-578f4bcb8f.165bb9527691c6b8
+  Name:              sba-kubernetes-578f4bcb8f
+Message:             Created pod: sba-kubernetes-578f4bcb8f-njcfr
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f.165bb9527691c6b8
+Name:             sba-kubernetes-578f4bcb8f.165bb952769367e8
+  Name:              sba-kubernetes-578f4bcb8f
+Message:             Created pod: sba-kubernetes-578f4bcb8f-jgbr7
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-578f4bcb8f.165bb952769367e8
 Name:             sba-kubernetes-64b5bd44d8-2zxhn.165b1e6dd21ef314
   Name:              sba-kubernetes-64b5bd44d8-2zxhn
 Message:             Successfully assigned default/sba-kubernetes-64b5bd44d8-2zxhn to minikube
@@ -535,6 +848,39 @@ Name:             sba-kubernetes-64b5bd44d8-57757.165b7643b89c47b0
 Name:             sba-kubernetes-64b5bd44d8-57757.165b7643bf01a744
   Name:              sba-kubernetes-64b5bd44d8-57757
   Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-57757.165b7643bf01a744
+Name:             sba-kubernetes-64b5bd44d8-57757.165bad84cb020048
+  Name:              sba-kubernetes-64b5bd44d8-57757
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-57757.165bad84cb020048
+Name:             sba-kubernetes-64b5bd44d8-57757.165bad853bf2e31c
+  Name:              sba-kubernetes-64b5bd44d8-57757
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-57757.165bad853bf2e31c
+Name:             sba-kubernetes-64b5bd44d8-57757.165bad86063c3c54
+  Name:              sba-kubernetes-64b5bd44d8-57757
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-57757.165bad86063c3c54
+Name:             sba-kubernetes-64b5bd44d8-57757.165bad860ab51fbc
+  Name:              sba-kubernetes-64b5bd44d8-57757
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-57757.165bad860ab51fbc
+Name:             sba-kubernetes-64b5bd44d8-57757.165bad86126879c0
+  Name:              sba-kubernetes-64b5bd44d8-57757
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-57757.165bad86126879c0
+Name:             sba-kubernetes-64b5bd44d8-57757.165bb66c9195ad8c
+  Name:              sba-kubernetes-64b5bd44d8-57757
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-57757.165bb66c9195ad8c
+Name:             sba-kubernetes-64b5bd44d8-57757.165bb66d3f5b7fdc
+  Name:              sba-kubernetes-64b5bd44d8-57757
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-57757.165bb66d3f5b7fdc
+Name:             sba-kubernetes-64b5bd44d8-57757.165bb677c644ba18
+  Name:              sba-kubernetes-64b5bd44d8-57757
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-57757.165bb677c644ba18
+Name:             sba-kubernetes-64b5bd44d8-57757.165bb677cb49adc0
+  Name:              sba-kubernetes-64b5bd44d8-57757
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-57757.165bb677cb49adc0
+Name:             sba-kubernetes-64b5bd44d8-57757.165bb677d43f5268
+  Name:              sba-kubernetes-64b5bd44d8-57757
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-57757.165bb677d43f5268
+Name:             sba-kubernetes-64b5bd44d8-57757.165bb687f1c099b8
+  Name:              sba-kubernetes-64b5bd44d8-57757
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-57757.165bb687f1c099b8
 Name:             sba-kubernetes-64b5bd44d8-6fgng.165b7642ebc8f580
   Name:              sba-kubernetes-64b5bd44d8-6fgng
 Message:             Successfully assigned default/sba-kubernetes-64b5bd44d8-6fgng to minikube
@@ -551,6 +897,77 @@ Name:             sba-kubernetes-64b5bd44d8-6fgng.165b7643813d8b44
 Name:             sba-kubernetes-64b5bd44d8-6fgng.165b764386f9ae3c
   Name:              sba-kubernetes-64b5bd44d8-6fgng
   Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-6fgng.165b764386f9ae3c
+Name:             sba-kubernetes-64b5bd44d8-6fgng.165bad84c7047ed0
+  Name:              sba-kubernetes-64b5bd44d8-6fgng
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-6fgng.165bad84c7047ed0
+Name:             sba-kubernetes-64b5bd44d8-6fgng.165bad852a2cee70
+  Name:              sba-kubernetes-64b5bd44d8-6fgng
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-6fgng.165bad852a2cee70
+Name:             sba-kubernetes-64b5bd44d8-6fgng.165bad859abd9b30
+  Name:              sba-kubernetes-64b5bd44d8-6fgng
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-6fgng.165bad859abd9b30
+Name:             sba-kubernetes-64b5bd44d8-6fgng.165bad85a154f4e8
+  Name:              sba-kubernetes-64b5bd44d8-6fgng
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-6fgng.165bad85a154f4e8
+Name:             sba-kubernetes-64b5bd44d8-6fgng.165bad85b2edc748
+  Name:              sba-kubernetes-64b5bd44d8-6fgng
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-6fgng.165bad85b2edc748
+Name:             sba-kubernetes-64b5bd44d8-6fgng.165bb66c90e60ef4
+  Name:              sba-kubernetes-64b5bd44d8-6fgng
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-6fgng.165bb66c90e60ef4
+Name:             sba-kubernetes-64b5bd44d8-6fgng.165bb66d20010b98
+  Name:              sba-kubernetes-64b5bd44d8-6fgng
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-6fgng.165bb66d20010b98
+Name:             sba-kubernetes-64b5bd44d8-6fgng.165bb6741c82fa10
+  Name:              sba-kubernetes-64b5bd44d8-6fgng
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-6fgng.165bb6741c82fa10
+Name:             sba-kubernetes-64b5bd44d8-6fgng.165bb67432f86fc8
+  Name:              sba-kubernetes-64b5bd44d8-6fgng
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-6fgng.165bb67432f86fc8
+Name:             sba-kubernetes-64b5bd44d8-6fgng.165bb6743a1ada48
+  Name:              sba-kubernetes-64b5bd44d8-6fgng
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-6fgng.165bb6743a1ada48
+Name:             sba-kubernetes-64b5bd44d8-6fgng.165bb687f1f28180
+  Name:              sba-kubernetes-64b5bd44d8-6fgng
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-6fgng.165bb687f1f28180
+Name:             sba-kubernetes-64b5bd44d8-c85vp.165bb6a0173e0014
+  Name:              sba-kubernetes-64b5bd44d8-c85vp
+Message:             Successfully assigned default/sba-kubernetes-64b5bd44d8-c85vp to minikube
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-c85vp.165bb6a0173e0014
+Name:             sba-kubernetes-64b5bd44d8-c85vp.165bb6a06d6dfdb8
+  Name:              sba-kubernetes-64b5bd44d8-c85vp
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-c85vp.165bb6a06d6dfdb8
+Name:             sba-kubernetes-64b5bd44d8-c85vp.165bb6a5e75451b8
+  Name:              sba-kubernetes-64b5bd44d8-c85vp
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-c85vp.165bb6a5e75451b8
+Name:             sba-kubernetes-64b5bd44d8-c85vp.165bb6a5eb77f3bc
+  Name:              sba-kubernetes-64b5bd44d8-c85vp
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-c85vp.165bb6a5eb77f3bc
+Name:             sba-kubernetes-64b5bd44d8-c85vp.165bb6a5f2232524
+  Name:              sba-kubernetes-64b5bd44d8-c85vp
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-c85vp.165bb6a5f2232524
+Name:             sba-kubernetes-64b5bd44d8-c85vp.165bb7d7c6e2b770
+  Name:              sba-kubernetes-64b5bd44d8-c85vp
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-c85vp.165bb7d7c6e2b770
+Name:             sba-kubernetes-64b5bd44d8-g6rkc.165bb6a015b89e70
+  Name:              sba-kubernetes-64b5bd44d8-g6rkc
+Message:             Successfully assigned default/sba-kubernetes-64b5bd44d8-g6rkc to minikube
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-g6rkc.165bb6a015b89e70
+Name:             sba-kubernetes-64b5bd44d8-g6rkc.165bb6a060504848
+  Name:              sba-kubernetes-64b5bd44d8-g6rkc
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-g6rkc.165bb6a060504848
+Name:             sba-kubernetes-64b5bd44d8-g6rkc.165bb6a40e28dc98
+  Name:              sba-kubernetes-64b5bd44d8-g6rkc
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-g6rkc.165bb6a40e28dc98
+Name:             sba-kubernetes-64b5bd44d8-g6rkc.165bb6a413f55e30
+  Name:              sba-kubernetes-64b5bd44d8-g6rkc
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-g6rkc.165bb6a413f55e30
+Name:             sba-kubernetes-64b5bd44d8-g6rkc.165bb6a41b939418
+  Name:              sba-kubernetes-64b5bd44d8-g6rkc
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-g6rkc.165bb6a41b939418
+Name:             sba-kubernetes-64b5bd44d8-g6rkc.165bb7d7c6a6eccc
+  Name:              sba-kubernetes-64b5bd44d8-g6rkc
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-g6rkc.165bb7d7c6a6eccc
 Name:             sba-kubernetes-64b5bd44d8-l6rhv.165b1c45f11ed434
   Name:              sba-kubernetes-64b5bd44d8-l6rhv
   Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-l6rhv.165b1c45f11ed434
@@ -573,9 +990,61 @@ Name:             sba-kubernetes-64b5bd44d8-mvjrm.165b7643571b3d84
 Name:             sba-kubernetes-64b5bd44d8-mvjrm.165b76435e448570
   Name:              sba-kubernetes-64b5bd44d8-mvjrm
   Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-mvjrm.165b76435e448570
+Name:             sba-kubernetes-64b5bd44d8-mvjrm.165bad84c692f210
+  Name:              sba-kubernetes-64b5bd44d8-mvjrm
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-mvjrm.165bad84c692f210
+Name:             sba-kubernetes-64b5bd44d8-mvjrm.165bad8547a10fe0
+  Name:              sba-kubernetes-64b5bd44d8-mvjrm
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-mvjrm.165bad8547a10fe0
+Name:             sba-kubernetes-64b5bd44d8-mvjrm.165bad862660c7c0
+  Name:              sba-kubernetes-64b5bd44d8-mvjrm
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-mvjrm.165bad862660c7c0
+Name:             sba-kubernetes-64b5bd44d8-mvjrm.165bad8629d409d0
+  Name:              sba-kubernetes-64b5bd44d8-mvjrm
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-mvjrm.165bad8629d409d0
+Name:             sba-kubernetes-64b5bd44d8-mvjrm.165bad8630efc628
+  Name:              sba-kubernetes-64b5bd44d8-mvjrm
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-mvjrm.165bad8630efc628
+Name:             sba-kubernetes-64b5bd44d8-mvjrm.165bb66c92328cec
+  Name:              sba-kubernetes-64b5bd44d8-mvjrm
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-mvjrm.165bb66c92328cec
+Name:             sba-kubernetes-64b5bd44d8-mvjrm.165bb66d45aed8fc
+  Name:              sba-kubernetes-64b5bd44d8-mvjrm
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-mvjrm.165bb66d45aed8fc
+Name:             sba-kubernetes-64b5bd44d8-mvjrm.165bb677ea1a8b5c
+  Name:              sba-kubernetes-64b5bd44d8-mvjrm
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-mvjrm.165bb677ea1a8b5c
+Name:             sba-kubernetes-64b5bd44d8-mvjrm.165bb677efbf7180
+  Name:              sba-kubernetes-64b5bd44d8-mvjrm
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-mvjrm.165bb677efbf7180
+Name:             sba-kubernetes-64b5bd44d8-mvjrm.165bb677f72b4fe8
+  Name:              sba-kubernetes-64b5bd44d8-mvjrm
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-mvjrm.165bb677f72b4fe8
+Name:             sba-kubernetes-64b5bd44d8-mvjrm.165bb687f1f9251c
+  Name:              sba-kubernetes-64b5bd44d8-mvjrm
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-mvjrm.165bb687f1f9251c
 Name:             sba-kubernetes-64b5bd44d8-p6tnk.165b1c45f18a54e8
   Name:              sba-kubernetes-64b5bd44d8-p6tnk
   Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-p6tnk.165b1c45f18a54e8
+Name:             sba-kubernetes-64b5bd44d8-tgzjw.165bb6a01618985c
+  Name:              sba-kubernetes-64b5bd44d8-tgzjw
+Message:             Successfully assigned default/sba-kubernetes-64b5bd44d8-tgzjw to minikube
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-tgzjw.165bb6a01618985c
+Name:             sba-kubernetes-64b5bd44d8-tgzjw.165bb6a06a144848
+  Name:              sba-kubernetes-64b5bd44d8-tgzjw
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-tgzjw.165bb6a06a144848
+Name:             sba-kubernetes-64b5bd44d8-tgzjw.165bb6a4808eccfc
+  Name:              sba-kubernetes-64b5bd44d8-tgzjw
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-tgzjw.165bb6a4808eccfc
+Name:             sba-kubernetes-64b5bd44d8-tgzjw.165bb6a485180798
+  Name:              sba-kubernetes-64b5bd44d8-tgzjw
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-tgzjw.165bb6a485180798
+Name:             sba-kubernetes-64b5bd44d8-tgzjw.165bb6a48ca0af24
+  Name:              sba-kubernetes-64b5bd44d8-tgzjw
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-tgzjw.165bb6a48ca0af24
+Name:             sba-kubernetes-64b5bd44d8-tgzjw.165bb7d7c6a383c0
+  Name:              sba-kubernetes-64b5bd44d8-tgzjw
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8-tgzjw.165bb7d7c6a383c0
 Name:             sba-kubernetes-64b5bd44d8-ztxc8.165b1c47f1a822a0
   Name:              sba-kubernetes-64b5bd44d8-ztxc8
 Message:             Successfully assigned default/sba-kubernetes-64b5bd44d8-ztxc8 to minikube
@@ -615,6 +1084,18 @@ Name:             sba-kubernetes-64b5bd44d8.165b7642ebc876f0
   Name:              sba-kubernetes-64b5bd44d8
 Message:             Created pod: sba-kubernetes-64b5bd44d8-mvjrm
   Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8.165b7642ebc876f0
+Name:             sba-kubernetes-64b5bd44d8.165bb6a014ec7dcc
+  Name:              sba-kubernetes-64b5bd44d8
+Message:             Created pod: sba-kubernetes-64b5bd44d8-g6rkc
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8.165bb6a014ec7dcc
+Name:             sba-kubernetes-64b5bd44d8.165bb6a01577b4dc
+  Name:              sba-kubernetes-64b5bd44d8
+Message:             Created pod: sba-kubernetes-64b5bd44d8-c85vp
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8.165bb6a01577b4dc
+Name:             sba-kubernetes-64b5bd44d8.165bb6a015796ac0
+  Name:              sba-kubernetes-64b5bd44d8
+Message:             Created pod: sba-kubernetes-64b5bd44d8-tgzjw
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes-64b5bd44d8.165bb6a015796ac0
 Name:             sba-kubernetes.165b1c47f091a6d4
   Name:              sba-kubernetes
 Message:             Scaled up replica set sba-kubernetes-64b5bd44d8 to 1
@@ -627,12 +1108,24 @@ Name:             sba-kubernetes.165b7642eae53b74
   Name:              sba-kubernetes
 Message:             Scaled up replica set sba-kubernetes-64b5bd44d8 to 3
   Self Link:          /api/v1/namespaces/default/events/sba-kubernetes.165b7642eae53b74
+Name:             sba-kubernetes.165bb6a01449e4cc
+  Name:              sba-kubernetes
+Message:             Scaled up replica set sba-kubernetes-64b5bd44d8 to 3
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes.165bb6a01449e4cc
+Name:             sba-kubernetes.165bb7dfd8b9864c
+  Name:              sba-kubernetes
+Message:             Scaled up replica set sba-kubernetes-578f4bcb8f to 3
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes.165bb7dfd8b9864c
+Name:             sba-kubernetes.165bb95275bc3160
+  Name:              sba-kubernetes
+Message:             Scaled up replica set sba-kubernetes-578f4bcb8f to 3
+  Self Link:          /api/v1/namespaces/default/events/sba-kubernetes.165bb95275bc3160
 
 **************************
 Get Environment Variables:
 **************************
 *********************************************************
-sba-kubernetes-64b5bd44d8-57757\'s Environment Variables:
+sba-kubernetes-578f4bcb8f-ghbbr\'s Environment Variables:
 *********************************************************
 
 ChocolateyToolsLocation=C:\tools
@@ -661,7 +1154,6 @@ PROCESSOR_ARCHITECTURE=AMD64
 LOCALAPPDATA=C:\Users\nmm13\AppData\Local
 CLASSPATH=.;
 COMPUTERNAME=LAPTOP-AVIPDVH0
-FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
 !::=::\
 NDKROOT=C:\NVPACK\android-ndk-r14b
 SYSTEMDRIVE=C:
@@ -686,7 +1178,6 @@ MSYSTEM_PREFIX=/mingw64
 AWE_DIR=C:\Program Files (x86)\Khrona LLC\Awesomium SDK\1.6.6\
 OneDrive=C:\Users\nmm13\OneDrive
 PROCESSOR_REVISION=9e09
-FPS_BROWSER_USER_PROFILE_STRING=Default
 TMPDIR=/tmp
 NUMBER_OF_PROCESSORS=8
 ProgramW6432=C:\Program Files
@@ -727,7 +1218,7 @@ RUBYOPT=-Eutf-8
 _=/usr/bin/env
 
 *********************************************************
-sba-kubernetes-64b5bd44d8-6fgng\'s Environment Variables:
+sba-kubernetes-578f4bcb8f-jgbr7\'s Environment Variables:
 *********************************************************
 
 ChocolateyToolsLocation=C:\tools
@@ -756,7 +1247,6 @@ PROCESSOR_ARCHITECTURE=AMD64
 LOCALAPPDATA=C:\Users\nmm13\AppData\Local
 CLASSPATH=.;
 COMPUTERNAME=LAPTOP-AVIPDVH0
-FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
 !::=::\
 NDKROOT=C:\NVPACK\android-ndk-r14b
 SYSTEMDRIVE=C:
@@ -781,7 +1271,6 @@ MSYSTEM_PREFIX=/mingw64
 AWE_DIR=C:\Program Files (x86)\Khrona LLC\Awesomium SDK\1.6.6\
 OneDrive=C:\Users\nmm13\OneDrive
 PROCESSOR_REVISION=9e09
-FPS_BROWSER_USER_PROFILE_STRING=Default
 TMPDIR=/tmp
 NUMBER_OF_PROCESSORS=8
 ProgramW6432=C:\Program Files
@@ -822,7 +1311,7 @@ RUBYOPT=-Eutf-8
 _=/usr/bin/env
 
 *********************************************************
-sba-kubernetes-64b5bd44d8-mvjrm\'s Environment Variables:
+sba-kubernetes-578f4bcb8f-njcfr\'s Environment Variables:
 *********************************************************
 
 ChocolateyToolsLocation=C:\tools
@@ -851,7 +1340,6 @@ PROCESSOR_ARCHITECTURE=AMD64
 LOCALAPPDATA=C:\Users\nmm13\AppData\Local
 CLASSPATH=.;
 COMPUTERNAME=LAPTOP-AVIPDVH0
-FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
 !::=::\
 NDKROOT=C:\NVPACK\android-ndk-r14b
 SYSTEMDRIVE=C:
@@ -876,7 +1364,6 @@ MSYSTEM_PREFIX=/mingw64
 AWE_DIR=C:\Program Files (x86)\Khrona LLC\Awesomium SDK\1.6.6\
 OneDrive=C:\Users\nmm13\OneDrive
 PROCESSOR_REVISION=9e09
-FPS_BROWSER_USER_PROFILE_STRING=Default
 TMPDIR=/tmp
 NUMBER_OF_PROCESSORS=8
 ProgramW6432=C:\Program Files

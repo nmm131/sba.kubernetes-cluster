@@ -42,7 +42,7 @@ echo
 echo "*********
 Get Pods:
 *********"
-kubectl get pods $POD_NAMES
+kubectl get pods -o wide $POD_NAMES
 echo
 echo "**************
 Describe Pods:
